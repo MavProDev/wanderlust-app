@@ -5,6 +5,7 @@ import type { SearchParams, ScoredCity, SortMode, VibeTag } from '@/lib/types';
 import { CITIES } from '@/data/cities';
 import { VIBES } from '@/data/vibes';
 import { filterDestinations } from '@/lib/filter';
+import { getWeatherHint } from '@/lib/seasons';
 import { resolveCity } from '@/lib/cityLookup';
 import SearchForm from '@/components/SearchForm';
 import ResultsGrid from '@/components/ResultsGrid';
@@ -61,7 +62,32 @@ export default function Home() {
   const [initialParams, setInitialParams] = useState<SearchParams | null>(null);
   const resultsRef = useRef<HTMLDivElement>(null);
 
-  const executeSearch = useCallback((params: SearchParams) => {
+  const generateRandomResults = useCallback((): ScoredCity[] => {
+    const shuffled = [...CITIES].sort(() => Math.random() - 0.5);
+    return shuffled.slice(0, 8).map((city) => ({
+      ...city,
+      distance: 0,
+      score: 0,
+      weatherHint: getWeatherHint(city),
+    }));
+  }, []);
+
+  const executeSearch = useCallback((params: SearchParams, isRandomSurprise = false) => {
+    if (isRandomSurprise) {
+      setCityError(null);
+      setIsLoading(true);
+      setTimeout(() => {
+        setResults(generateRandomResults());
+        setSortMode('best');
+        setHasSearched(true);
+        setIsLoading(false);
+        setTimeout(() => {
+          resultsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+      }, 150);
+      return;
+    }
+
     const resolved = resolveCity(params.homeCity);
     if (!resolved) {
       setCityError(
@@ -91,7 +117,7 @@ export default function Home() {
         resultsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }, 100);
     }, 150);
-  }, []);
+  }, [generateRandomResults]);
 
   // Load from URL hash on mount
   useEffect(() => {
@@ -102,8 +128,8 @@ export default function Home() {
     }
   }, [executeSearch]);
 
-  const handleSearch = (params: SearchParams) => {
-    executeSearch(params);
+  const handleSearch = (params: SearchParams, isRandomSurprise = false) => {
+    executeSearch(params, isRandomSurprise);
   };
 
   const handleSurpriseMe = () => {

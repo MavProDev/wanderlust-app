@@ -86,12 +86,14 @@ export default function ResultsGrid({
     );
   }
 
+  const hasDistances = results.some((r) => r.distance > 0);
+
   const sortedResults = [...results];
-  if (sortMode === 'closest') {
+  if (hasDistances && sortMode === 'closest') {
     sortedResults.sort(
       (a, b) => a.distance - b.distance || a.name.localeCompare(b.name)
     );
-  } else if (sortMode === 'furthest') {
+  } else if (hasDistances && sortMode === 'furthest') {
     sortedResults.sort(
       (a, b) => b.distance - a.distance || a.name.localeCompare(b.name)
     );
@@ -101,32 +103,34 @@ export default function ResultsGrid({
     <section aria-label="Search results">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-6">
         <h2 className="font-display font-bold text-2xl md:text-3xl text-charcoal">
-          Your Next Adventure
+          {hasDistances ? 'Your Next Adventure' : 'Random Picks'}
           <span className="ml-2 text-base font-body font-normal text-sage">
             {results.length} {results.length === 1 ? 'destination' : 'destinations'} found
           </span>
         </h2>
 
-        {/* Sort controls */}
-        <div className="flex gap-4">
-          {SORT_BUTTONS.map((btn) => (
-            <button
-              key={btn.mode}
-              type="button"
-              onClick={() => onSortChange(btn.mode)}
-              className={`
-                focus-ring text-sm font-medium pb-1 transition-colors
-                ${
-                  sortMode === btn.mode
-                    ? 'border-b-2 border-terracotta text-terracotta'
-                    : 'text-charcoal/60 hover:text-charcoal'
-                }
-              `}
-            >
-              {btn.label}
-            </button>
-          ))}
-        </div>
+        {/* Sort controls — only when distances are available */}
+        {hasDistances && (
+          <div className="flex gap-4">
+            {SORT_BUTTONS.map((btn) => (
+              <button
+                key={btn.mode}
+                type="button"
+                onClick={() => onSortChange(btn.mode)}
+                className={`
+                  focus-ring text-sm font-medium pb-1 transition-colors
+                  ${
+                    sortMode === btn.mode
+                      ? 'border-b-2 border-terracotta text-terracotta'
+                      : 'text-charcoal/60 hover:text-charcoal'
+                  }
+                `}
+              >
+                {btn.label}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Results grid */}

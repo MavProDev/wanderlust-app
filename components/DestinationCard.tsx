@@ -68,9 +68,11 @@ export default function DestinationCard({ city, index }: DestinationCardProps) {
         {/* State + distance badge */}
         <div className="flex items-center gap-2 mt-1">
           <span className="text-sm text-sage">{city.state}</span>
-          <span className="inline-block bg-sage/20 text-sage rounded-full px-3 py-0.5 text-sm font-medium">
-            {formatDistance(city.distance)} mi
-          </span>
+          {city.distance > 0 && (
+            <span className="inline-block bg-sage/20 text-sage rounded-full px-3 py-0.5 text-sm font-medium">
+              {formatDistance(city.distance)} mi
+            </span>
+          )}
         </div>
 
         {/* Weather hint */}

@@ -7,7 +7,7 @@ import VibeChip from './VibeChip';
 import CityAutocomplete from './CityAutocomplete';
 
 interface SearchFormProps {
-  onSearch: (params: SearchParams) => void;
+  onSearch: (params: SearchParams, isRandomSurprise?: boolean) => void;
   onSurpriseMe: () => SearchParams;
   cityError: string | null;
   initialParams: SearchParams | null;
@@ -71,14 +71,18 @@ export default function SearchForm({ onSearch, onSurpriseMe, cityError, initialP
   };
 
   const handleSurpriseMe = () => {
-    if (!homeCity.trim()) return;
     const params = onSurpriseMe();
-    params.homeCity = homeCity;
     setMaxDistance(params.maxDistance);
     setMode(params.mode);
     setTripLength(params.tripLength);
     setSelectedVibes(params.vibes);
-    onSearch(params);
+
+    if (homeCity.trim()) {
+      params.homeCity = homeCity;
+      onSearch(params);
+    } else {
+      onSearch(params, true);
+    }
   };
 
   const handleClear = () => {
