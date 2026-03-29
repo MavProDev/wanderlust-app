@@ -491,6 +491,236 @@ export const cityLookupMap = new Map<string, { lat: number; lng: number }>([
   ['rancho cucamonga, california', { lat: 34.1064, lng: -117.5931 }],
   ['oceanside, california', { lat: 33.1959, lng: -117.3795 }],
   ['pomona, california', { lat: 34.0551, lng: -117.7500 }],
+
+  // ── Batch 3: suburbs, college towns, gap-fillers (~150 cities) ──
+
+  // NYC metro & Hudson Valley
+  ['mount vernon, new york', { lat: 40.9126, lng: -73.8371 }],
+  ['middletown, new york', { lat: 41.4459, lng: -74.4221 }],
+  ['newburgh, new york', { lat: 41.5034, lng: -74.0104 }],
+  ['kingston, new york', { lat: 41.9270, lng: -73.9974 }],
+  ['plattsburgh, new york', { lat: 44.6995, lng: -73.4529 }],
+  ['glens falls, new york', { lat: 43.3095, lng: -73.6440 }],
+  ['paramus, new jersey', { lat: 40.9445, lng: -74.0754 }],
+  ['morristown, new jersey', { lat: 40.7968, lng: -74.4815 }],
+  ['hackensack, new jersey', { lat: 40.8859, lng: -74.0435 }],
+  ['toms river, new jersey', { lat: 39.9537, lng: -74.1979 }],
+  ['vineland, new jersey', { lat: 39.4863, lng: -75.0260 }],
+
+  // DC / Baltimore metro
+  ['gaithersburg, maryland', { lat: 39.1434, lng: -77.2014 }],
+  ['bowie, maryland', { lat: 38.9428, lng: -76.7302 }],
+  ['hagerstown, maryland', { lat: 39.6418, lng: -77.7200 }],
+  ['towson, maryland', { lat: 39.4015, lng: -76.6019 }],
+  ['manassas, virginia', { lat: 38.7509, lng: -77.4753 }],
+  ['leesburg, virginia', { lat: 39.1157, lng: -77.5636 }],
+  ['woodbridge, virginia', { lat: 38.6582, lng: -77.2497 }],
+  ['fairfax, virginia', { lat: 38.8462, lng: -77.3064 }],
+  ['herndon, virginia', { lat: 38.9696, lng: -77.3861 }],
+  ['harrisonburg, virginia', { lat: 38.4496, lng: -78.8689 }],
+  ['danville, virginia', { lat: 36.5860, lng: -79.3930 }],
+  ['staunton, virginia', { lat: 38.1496, lng: -79.0717 }],
+
+  // Chicago metro & downstate Illinois
+  ['elgin, illinois', { lat: 42.0354, lng: -88.2826 }],
+  ['waukegan, illinois', { lat: 42.3636, lng: -87.8448 }],
+  ['arlington heights, illinois', { lat: 42.0884, lng: -87.9806 }],
+  ['oak park, illinois', { lat: 41.8850, lng: -87.7845 }],
+  ['tinley park, illinois', { lat: 41.5731, lng: -87.7845 }],
+  ['orland park, illinois', { lat: 41.6303, lng: -87.8539 }],
+  ['normal, illinois', { lat: 40.5142, lng: -88.9906 }],
+  ['dekalb, illinois', { lat: 41.9295, lng: -88.7504 }],
+  ['carbondale, illinois', { lat: 37.7273, lng: -89.2168 }],
+
+  // Atlanta metro & Georgia
+  ['decatur, georgia', { lat: 33.7748, lng: -84.2963 }],
+  ['kennesaw, georgia', { lat: 34.0234, lng: -84.6155 }],
+  ['lawrenceville, georgia', { lat: 33.9563, lng: -83.9880 }],
+  ['peachtree city, georgia', { lat: 33.3968, lng: -84.5966 }],
+  ['valdosta, georgia', { lat: 30.8327, lng: -83.2785 }],
+  ['dalton, georgia', { lat: 34.7698, lng: -84.9702 }],
+  ['gainesville, georgia', { lat: 34.2979, lng: -83.8241 }],
+
+  // DFW / Houston / Texas
+  ['denton, texas', { lat: 33.2148, lng: -97.1331 }],
+  ['richardson, texas', { lat: 32.9483, lng: -96.7299 }],
+  ['the woodlands, texas', { lat: 30.1658, lng: -95.4613 }],
+  ['sugar land, texas', { lat: 29.6197, lng: -95.6349 }],
+  ['pearland, texas', { lat: 29.5636, lng: -95.2860 }],
+  ['league city, texas', { lat: 29.5075, lng: -95.0950 }],
+  ['temple, texas', { lat: 31.0982, lng: -97.3428 }],
+  ['san marcos, texas', { lat: 29.8833, lng: -97.9414 }],
+  ['new braunfels, texas', { lat: 29.7030, lng: -98.1245 }],
+  ['abilene, texas', { lat: 32.4487, lng: -99.7331 }],
+  ['lufkin, texas', { lat: 31.3382, lng: -94.7291 }],
+  ['nacogdoches, texas', { lat: 31.6035, lng: -94.6555 }],
+  ['san angelo, texas', { lat: 31.4638, lng: -100.4370 }],
+
+  // Florida additional
+  ['melbourne, florida', { lat: 28.0836, lng: -80.6081 }],
+  ['stuart, florida', { lat: 27.1975, lng: -80.2528 }],
+  ['winter haven, florida', { lat: 28.0222, lng: -81.7329 }],
+  ['panama city, florida', { lat: 30.1588, lng: -85.6602 }],
+  ['vero beach, florida', { lat: 27.6386, lng: -80.3973 }],
+  ['destin, florida', { lat: 30.3935, lng: -86.4958 }],
+
+  // Ohio
+  ['lima, ohio', { lat: 40.7428, lng: -84.1053 }],
+  ['mansfield, ohio', { lat: 40.7589, lng: -82.5154 }],
+  ['findlay, ohio', { lat: 41.0442, lng: -83.6499 }],
+  ['wooster, ohio', { lat: 40.8051, lng: -81.9351 }],
+  ['athens, ohio', { lat: 39.3292, lng: -82.1013 }],
+  ['bowling green, ohio', { lat: 41.3748, lng: -83.6513 }],
+  ['zanesville, ohio', { lat: 39.9403, lng: -82.0132 }],
+
+  // Indiana
+  ['muncie, indiana', { lat: 40.1934, lng: -85.3864 }],
+  ['lafayette, indiana', { lat: 40.4167, lng: -86.8753 }],
+  ['anderson, indiana', { lat: 40.1053, lng: -85.6803 }],
+  ['fishers, indiana', { lat: 39.9568, lng: -86.0131 }],
+
+  // Michigan
+  ['saginaw, michigan', { lat: 43.4195, lng: -83.9508 }],
+  ['midland, michigan', { lat: 43.6156, lng: -84.2472 }],
+  ['mount pleasant, michigan', { lat: 43.5978, lng: -84.7675 }],
+  ['portage, michigan', { lat: 42.2012, lng: -85.5800 }],
+
+  // Wisconsin
+  ['sheboygan, wisconsin', { lat: 43.7508, lng: -87.7145 }],
+  ['fond du lac, wisconsin', { lat: 43.7730, lng: -88.4471 }],
+  ['wausau, wisconsin', { lat: 44.9591, lng: -89.6301 }],
+  ['janesville, wisconsin', { lat: 42.6828, lng: -89.0187 }],
+
+  // Minnesota
+  ['mankato, minnesota', { lat: 44.1636, lng: -93.9994 }],
+  ['moorhead, minnesota', { lat: 46.8738, lng: -96.7678 }],
+  ['st. cloud, minnesota', { lat: 45.5579, lng: -94.1632 }],
+  ['winona, minnesota', { lat: 44.0499, lng: -91.6393 }],
+
+  // Missouri
+  ['columbia, missouri', { lat: 38.9517, lng: -92.3341 }],
+  ['st. joseph, missouri', { lat: 39.7675, lng: -94.8467 }],
+  ['cape girardeau, missouri', { lat: 37.3059, lng: -89.5181 }],
+  ['joplin, missouri', { lat: 37.0842, lng: -94.5133 }],
+
+  // Kansas
+  ['salina, kansas', { lat: 38.8403, lng: -97.6114 }],
+  ['hutchinson, kansas', { lat: 38.0608, lng: -97.9298 }],
+  ['garden city, kansas', { lat: 37.9717, lng: -100.8727 }],
+  ['dodge city, kansas', { lat: 37.7528, lng: -100.0171 }],
+
+  // Nebraska
+  ['north platte, nebraska', { lat: 41.1403, lng: -100.7601 }],
+  ['scottsbluff, nebraska', { lat: 41.8666, lng: -103.6672 }],
+  ['fremont, nebraska', { lat: 41.4333, lng: -96.4981 }],
+
+  // Dakotas
+  ['pierre, south dakota', { lat: 44.3683, lng: -100.3510 }],
+  ['vermillion, south dakota', { lat: 42.7794, lng: -96.9292 }],
+  ['williston, north dakota', { lat: 48.1470, lng: -103.6180 }],
+  ['dickinson, north dakota', { lat: 46.8792, lng: -102.7896 }],
+  ['mandan, north dakota', { lat: 46.8267, lng: -100.8918 }],
+
+  // Oklahoma
+  ['enid, oklahoma', { lat: 36.3956, lng: -97.8784 }],
+  ['edmond, oklahoma', { lat: 35.6528, lng: -97.4781 }],
+  ['moore, oklahoma', { lat: 35.3395, lng: -97.4867 }],
+  ['muskogee, oklahoma', { lat: 35.7479, lng: -95.3697 }],
+
+  // Iowa
+  ['council bluffs, iowa', { lat: 41.2619, lng: -95.8608 }],
+  ['dubuque, iowa', { lat: 42.5006, lng: -90.6646 }],
+  ['mason city, iowa', { lat: 43.1536, lng: -93.2010 }],
+  ['burlington, iowa', { lat: 40.8075, lng: -91.1129 }],
+
+  // Alabama
+  ['florence, alabama', { lat: 34.7998, lng: -87.6773 }],
+  ['auburn, alabama', { lat: 32.6099, lng: -85.4808 }],
+  ['dothan, alabama', { lat: 31.2232, lng: -85.3905 }],
+
+  // Mississippi
+  ['gulfport, mississippi', { lat: 30.3674, lng: -89.0928 }],
+  ['meridian, mississippi', { lat: 32.3643, lng: -88.7037 }],
+  ['tupelo, mississippi', { lat: 34.2576, lng: -88.7034 }],
+  ['starkville, mississippi', { lat: 33.4504, lng: -88.8184 }],
+
+  // West Virginia
+  ['parkersburg, west virginia', { lat: 39.2667, lng: -81.5615 }],
+  ['wheeling, west virginia', { lat: 40.0640, lng: -80.7209 }],
+  ['beckley, west virginia', { lat: 37.7782, lng: -81.1882 }],
+
+  // South Carolina
+  ['aiken, south carolina', { lat: 33.5604, lng: -81.7196 }],
+  ['spartanburg, south carolina', { lat: 34.9496, lng: -81.9321 }],
+  ['florence, south carolina', { lat: 34.1954, lng: -79.7626 }],
+  ['hilton head island, south carolina', { lat: 32.2163, lng: -80.7526 }],
+
+  // North Carolina
+  ['elizabeth city, north carolina', { lat: 36.2946, lng: -76.2510 }],
+  ['hickory, north carolina', { lat: 35.7332, lng: -81.3413 }],
+  ['boone, north carolina', { lat: 36.2168, lng: -81.6746 }],
+  ['jacksonville, north carolina', { lat: 34.7541, lng: -77.4303 }],
+  ['new bern, north carolina', { lat: 35.1085, lng: -77.0441 }],
+
+  // Kentucky
+  ['paducah, kentucky', { lat: 37.0834, lng: -88.6001 }],
+  ['frankfort, kentucky', { lat: 38.2009, lng: -84.8733 }],
+  ['richmond, kentucky', { lat: 37.7479, lng: -84.2947 }],
+
+  // Denver metro & Colorado
+  ['steamboat springs, colorado', { lat: 40.4850, lng: -106.8317 }],
+  ['glenwood springs, colorado', { lat: 39.5506, lng: -107.3248 }],
+  ['thornton, colorado', { lat: 39.8680, lng: -104.9719 }],
+  ['arvada, colorado', { lat: 39.8028, lng: -105.0875 }],
+  ['lakewood, colorado', { lat: 39.7047, lng: -105.0814 }],
+  ['westminster, colorado', { lat: 39.8367, lng: -105.0372 }],
+
+  // Utah (Wasatch Front)
+  ['orem, utah', { lat: 40.2969, lng: -111.6946 }],
+  ['sandy, utah', { lat: 40.5650, lng: -111.8590 }],
+  ['lehi, utah', { lat: 40.3916, lng: -111.8508 }],
+  ['cedar city, utah', { lat: 37.6775, lng: -113.0619 }],
+
+  // Idaho
+  ['meridian, idaho', { lat: 43.6121, lng: -116.3915 }],
+  ['lewiston, idaho', { lat: 46.4165, lng: -117.0177 }],
+  ['rexburg, idaho', { lat: 43.8260, lng: -111.7899 }],
+
+  // Wyoming & Montana
+  ['gillette, wyoming', { lat: 44.2911, lng: -105.5022 }],
+  ['riverton, wyoming', { lat: 42.8552, lng: -108.3801 }],
+  ['miles city, montana', { lat: 46.4083, lng: -105.8406 }],
+  ['butte, montana', { lat: 46.0038, lng: -112.5348 }],
+
+  // Washington state
+  ['yakima, washington', { lat: 46.6021, lng: -120.5059 }],
+  ['walla walla, washington', { lat: 46.0646, lng: -118.3430 }],
+  ['lynnwood, washington', { lat: 47.8209, lng: -122.3151 }],
+  ['auburn, washington', { lat: 47.3073, lng: -122.2285 }],
+  ['federal way, washington', { lat: 47.3223, lng: -122.3126 }],
+
+  // Oregon
+  ['grants pass, oregon', { lat: 42.4390, lng: -123.3284 }],
+  ['roseburg, oregon', { lat: 43.2165, lng: -123.3417 }],
+  ['klamath falls, oregon', { lat: 42.2249, lng: -121.7817 }],
+  ['lake oswego, oregon', { lat: 45.4207, lng: -122.6706 }],
+
+  // Bay Area & California
+  ['redwood city, california', { lat: 37.4852, lng: -122.2364 }],
+  ['sunnyvale, california', { lat: 37.3688, lng: -122.0363 }],
+  ['mountain view, california', { lat: 37.3861, lng: -122.0839 }],
+  ['fremont, california', { lat: 37.5485, lng: -121.9886 }],
+  ['hayward, california', { lat: 37.6688, lng: -122.0808 }],
+  ['concord, california', { lat: 37.9780, lng: -122.0311 }],
+  ['walnut creek, california', { lat: 37.9101, lng: -122.0652 }],
+  ['berkeley, california', { lat: 37.8716, lng: -122.2727 }],
+  ['davis, california', { lat: 38.5449, lng: -121.7405 }],
+  ['merced, california', { lat: 37.3022, lng: -120.4830 }],
+  ['eureka, california', { lat: 40.8021, lng: -124.1637 }],
+  ['san rafael, california', { lat: 37.9735, lng: -122.5311 }],
+  ['petaluma, california', { lat: 38.2324, lng: -122.6367 }],
+  ['victorville, california', { lat: 34.5362, lng: -117.2928 }],
+  ['murrieta, california', { lat: 33.5539, lng: -117.2139 }],
 ]);
 
 /**
