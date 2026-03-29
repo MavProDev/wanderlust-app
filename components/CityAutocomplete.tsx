@@ -3,6 +3,19 @@
 import { useState, useRef, useEffect, useMemo, useId } from 'react';
 import { getCityNames } from '@/lib/cityLookup';
 
+const PLACEHOLDER_CITIES = [
+  'Buffalo, NY',
+  'Austin, TX',
+  'Denver, CO',
+  'Portland, OR',
+  'Nashville, TN',
+  'Miami, FL',
+  'Chicago, IL',
+  'Seattle, WA',
+  'Santa Fe, NM',
+  'Asheville, NC',
+];
+
 interface CityAutocompleteProps {
   value: string;
   onChange: (value: string) => void;
@@ -17,11 +30,22 @@ export default function CityAutocomplete({
   const [suggestions, setSuggestions] = useState<string[]>([]);
   const [isOpen, setIsOpen] = useState(false);
   const [highlightIndex, setHighlightIndex] = useState(-1);
+  const [placeholderIndex, setPlaceholderIndex] = useState(0);
+  const [isFocused, setIsFocused] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const listboxId = useId();
 
   const allCities = useMemo(() => getCityNames(), []);
+
+  // Cycle placeholder city names
+  useEffect(() => {
+    if (value || isFocused) return;
+    const interval = setInterval(() => {
+      setPlaceholderIndex((prev) => (prev + 1) % PLACEHOLDER_CITIES.length);
+    }, 2500);
+    return () => clearInterval(interval);
+  }, [value, isFocused]);
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -122,9 +146,11 @@ export default function CityAutocomplete({
         onChange={(e) => handleInputChange(e.target.value)}
         onKeyDown={handleKeyDown}
         onFocus={() => {
+          setIsFocused(true);
           if (suggestions.length > 0) setIsOpen(true);
         }}
-        placeholder='e.g. Buffalo, NY (press "/" to focus)'
+        onBlur={() => setIsFocused(false)}
+        placeholder={`e.g. ${PLACEHOLDER_CITIES[placeholderIndex]}`}
         autoComplete="off"
         className="focus-ring w-full px-4 py-2.5 rounded-lg bg-sand border border-sage/30 text-charcoal placeholder:text-sage"
       />
