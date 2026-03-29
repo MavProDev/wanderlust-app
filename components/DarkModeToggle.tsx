@@ -30,7 +30,7 @@ export default function DarkModeToggle() {
       type="button"
       onClick={toggle}
       aria-label="Toggle dark mode"
-      className="focus-ring p-2 rounded-full hover:bg-cream transition-colors text-2xl leading-none"
+      className="focus-ring p-2 rounded-full hover:bg-cream transition-all duration-300 text-2xl leading-none hover:scale-110 hover:rotate-12"
     >
       {isDark ? '\u2600\uFE0F' : '\u{1F319}'}
     </button>

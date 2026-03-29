@@ -256,7 +256,7 @@ export default function SearchForm({ onSearch, onSurpriseMe, cityError, initialP
         <button
           type="button"
           onClick={handleSurpriseMe}
-          className="focus-ring sm:w-auto px-6 py-4 rounded-lg border-2 border-terracotta text-terracotta font-display font-bold text-lg hover:bg-terracotta hover:text-white transition-colors"
+          className="focus-ring sm:w-auto px-6 py-4 rounded-lg border-2 border-terracotta text-terracotta font-display font-bold text-lg hover:bg-terracotta hover:text-white hover:scale-105 hover:shadow-lg transition-all duration-200"
         >
           {'\u{1F3B2}'} Surprise Me
         </button>

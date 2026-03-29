@@ -26,9 +26,26 @@ body {
   transition: background-color 300ms ease, color 300ms ease;
 }
 
-/* Hero noise texture overlay */
+/* Hero noise texture overlay + ambient gradient */
 .hero-noise {
   position: relative;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(199, 91, 57, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 50%, rgba(45, 80, 22, 0.06) 0%, transparent 50%);
+  background-size: 200% 100%;
+  animation: heroShift 12s ease-in-out infinite alternate;
+}
+
+.dark .hero-noise {
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(255, 107, 74, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 50%, rgba(74, 138, 48, 0.08) 0%, transparent 50%);
+  background-size: 200% 100%;
+}
+
+@keyframes heroShift {
+  from { background-position: 0% center; }
+  to { background-position: 100% center; }
 }
 
 .hero-noise::after {
@@ -197,6 +214,12 @@ input[type='range']::-moz-range-thumb {
 /* Selected vibe chip glow */
 .vibe-glow {
   box-shadow: 0 0 12px rgba(199, 91, 57, 0.4);
+}
+
+/* Share button hover spin */
+.card-glow .focus-ring:first-of-type:hover svg {
+  transform: rotate(15deg) scale(1.15);
+  transition: transform 0.2s ease;
 }
 
 /* Scrollbar styling for autocomplete dropdown */
