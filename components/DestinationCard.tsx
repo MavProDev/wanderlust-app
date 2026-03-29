@@ -27,7 +27,7 @@ export default function DestinationCard({ city, index }: DestinationCardProps) {
   return (
     <>
       <div
-        className="relative bg-cream rounded-xl shadow-md p-6 animate-slideUp hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
+        className="relative bg-cream rounded-xl shadow-md p-6 animate-slideUp card-glow hover:-translate-y-0.5 transition-all duration-200"
         style={{ animationDelay: `${index * 100}ms` }}
       >
         {/* Share button */}

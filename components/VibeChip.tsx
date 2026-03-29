@@ -26,7 +26,7 @@ export default function VibeChip({
         transition-all duration-150 cursor-pointer select-none
         ${
           selected
-            ? 'bg-terracotta text-white scale-105'
+            ? 'bg-terracotta text-white scale-105 vibe-glow'
             : 'border border-sage text-charcoal hover:border-terracotta'
         }
       `}

@@ -160,7 +160,7 @@ export default function Home() {
           </div>
 
           <div className="text-center animate-fadeIn">
-            <h1 className="font-display font-black text-5xl md:text-7xl text-charcoal">
+            <h1 className="font-display font-black text-5xl md:text-7xl text-charcoal neon-title">
               Wanderlust
             </h1>
             <p className="font-display text-xl text-charcoal/60 mt-2">

@@ -95,6 +95,110 @@ input[type='range']::-moz-range-thumb {
   animation-fill-mode: both;
 }
 
+/* ── LED / Glow Effects ── */
+
+/* Animated gradient border wrapper */
+.led-border {
+  position: relative;
+  border-radius: 1rem;
+  isolation: isolate;
+}
+
+.led-border::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: conic-gradient(
+    from var(--led-angle, 0deg),
+    #C75B39,
+    #FF6B4A,
+    #4A8A30,
+    #87A878,
+    #C75B39
+  );
+  animation: ledSpin 4s linear infinite;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.led-border::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: conic-gradient(
+    from var(--led-angle, 0deg),
+    #C75B39,
+    #FF6B4A,
+    #4A8A30,
+    #87A878,
+    #C75B39
+  );
+  animation: ledSpin 4s linear infinite;
+  z-index: -2;
+  filter: blur(12px);
+  opacity: 0.4;
+}
+
+@property --led-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes ledSpin {
+  to { --led-angle: 360deg; }
+}
+
+/* Neon text glow for the title */
+.neon-title {
+  text-shadow:
+    0 0 10px rgba(199, 91, 57, 0.3),
+    0 0 40px rgba(199, 91, 57, 0.15),
+    0 0 80px rgba(255, 107, 74, 0.08);
+}
+
+.dark .neon-title {
+  text-shadow:
+    0 0 10px rgba(255, 107, 74, 0.5),
+    0 0 40px rgba(255, 107, 74, 0.25),
+    0 0 80px rgba(255, 107, 74, 0.12);
+}
+
+/* Glow effect on destination cards */
+.card-glow {
+  transition: box-shadow 0.3s ease;
+}
+
+.card-glow:hover {
+  box-shadow:
+    0 4px 20px rgba(199, 91, 57, 0.15),
+    0 0 40px rgba(199, 91, 57, 0.08);
+}
+
+.dark .card-glow:hover {
+  box-shadow:
+    0 4px 20px rgba(255, 107, 74, 0.2),
+    0 0 40px rgba(255, 107, 74, 0.1);
+}
+
+/* Glow pulse on the Discover button */
+.btn-glow {
+  box-shadow: 0 0 20px rgba(255, 107, 74, 0.3);
+  animation: btnGlow 3s ease-in-out infinite;
+}
+
+@keyframes btnGlow {
+  0%, 100% { box-shadow: 0 0 20px rgba(255, 107, 74, 0.3); }
+  50% { box-shadow: 0 0 35px rgba(255, 107, 74, 0.5), 0 0 60px rgba(199, 91, 57, 0.2); }
+}
+
+/* Selected vibe chip glow */
+.vibe-glow {
+  box-shadow: 0 0 12px rgba(199, 91, 57, 0.4);
+}
+
 /* Scrollbar styling for autocomplete dropdown */
 .autocomplete-dropdown::-webkit-scrollbar {
   width: 6px;

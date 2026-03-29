@@ -98,7 +98,7 @@ export default function SearchForm({ onSearch, onSurpriseMe, cityError, initialP
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-cream rounded-2xl shadow-lg p-6 md:p-8"
+      className="led-border bg-cream rounded-2xl shadow-lg p-6 md:p-8"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Home city */}
@@ -249,7 +249,7 @@ export default function SearchForm({ onSearch, onSurpriseMe, cityError, initialP
       <div className="flex flex-col sm:flex-row gap-3 mt-6">
         <button
           type="submit"
-          className="focus-ring flex-1 bg-coral text-white font-display font-bold text-xl py-4 rounded-lg animate-discoverPulse hover:opacity-90 transition-opacity"
+          className="focus-ring flex-1 bg-coral text-white font-display font-bold text-xl py-4 rounded-lg btn-glow hover:opacity-90 transition-opacity"
         >
           Discover Destinations
         </button>
