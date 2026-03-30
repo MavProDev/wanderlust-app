@@ -21,6 +21,9 @@ function encodeHashState(params: SearchParams): string {
   if (params.vibes.length > 0) {
     data.v = params.vibes.join(',');
   }
+  if (params.keywords.trim()) {
+    data.k = params.keywords.trim();
+  }
   return '#' + new URLSearchParams(data).toString();
 }
 
@@ -40,7 +43,7 @@ function decodeHashState(): SearchParams | null {
       mode: mode as 'drive' | 'fly',
       tripLength: tripLength as 'day' | 'weekend' | '3-5days' | 'week',
       vibes,
-      keywords: '',
+      keywords: params.get('k') ?? '',
     };
   } catch {
     return null;

@@ -46,6 +46,7 @@ export default function SearchForm({ onSearch, onSurpriseMe, cityError, initialP
       setMode(initialParams.mode);
       setTripLength(initialParams.tripLength);
       setSelectedVibes(initialParams.vibes);
+      setKeywords(initialParams.keywords);
     }
   }, [initialParams]);
 
