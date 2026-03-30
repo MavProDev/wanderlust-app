@@ -1,6 +1,37 @@
 import type { City, SearchParams, ScoredCity } from '@/lib/types';
 import { haversineDistance } from '@/lib/distance';
 import { getCurrentSeason, getWeatherHint } from '@/lib/seasons';
+import { VIBES } from '@/data/vibes';
+
+function matchKeywords(city: City, keywords: string): number {
+  if (!keywords.trim()) return 0;
+
+  const terms = keywords
+    .toLowerCase()
+    .split(/[,\s]+/)
+    .filter((t) => t.length >= 2);
+
+  if (terms.length === 0) return 0;
+
+  let score = 0;
+  const nameLower = city.name.toLowerCase();
+  const stateLower = city.state.toLowerCase();
+  const blurbLower = city.blurb.toLowerCase();
+  const vibeLabels = VIBES.filter((v) => city.vibes.includes(v.id))
+    .map((v) => v.label.toLowerCase());
+
+  for (const term of terms) {
+    if (nameLower.includes(term) || stateLower.includes(term)) {
+      score += 15;
+    } else if (blurbLower.includes(term)) {
+      score += 8;
+    } else if (vibeLabels.some((label) => label.includes(term))) {
+      score += 8;
+    }
+  }
+
+  return score;
+}
 
 export function filterDestinations(
   cities: City[],
@@ -8,6 +39,7 @@ export function filterDestinations(
   homeCoords: { lat: number; lng: number }
 ): ScoredCity[] {
   const currentSeason = getCurrentSeason();
+  const hasKeywords = params.keywords.trim().length > 0;
 
   // Calculate distance for every city
   const withDistance = cities.map((city) => ({
@@ -56,6 +88,9 @@ export function filterDestinations(
       score += 5;
     }
 
+    // Keyword matching
+    score += matchKeywords(city, params.keywords);
+
     // -1 per 100mi distance (slight closeness preference)
     score -= Math.floor(city.distance / 100);
 
@@ -69,9 +104,9 @@ export function filterDestinations(
     };
   });
 
-  // Filter out zero-score if user selected vibes
+  // Filter out zero-score if user selected vibes or keywords
   let results = scored;
-  if (params.vibes.length > 0) {
+  if (params.vibes.length > 0 || hasKeywords) {
     results = scored.filter((city) => city.score > 0);
   }
 
