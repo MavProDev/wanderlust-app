@@ -220,28 +220,25 @@ export default function SearchForm({ onSearch, onSurpriseMe, cityError, initialP
           </div>
         </div>
 
-        {/* Keywords \u2014 disabled */}
-        <div className="md:col-span-2 relative">
+        {/* Keywords */}
+        <div className="md:col-span-2">
           <label
             htmlFor="keywords"
             className="block text-sm font-medium mb-1 text-charcoal"
           >
             Keywords
           </label>
-          <div className="relative">
-            <input
-              id="keywords"
-              type="text"
-              value={keywords}
-              onChange={(e) => setKeywords(e.target.value)}
-              placeholder="e.g. live music, hiking trails..."
-              tabIndex={-1}
-              className="w-full px-4 py-2.5 rounded-lg bg-sand border border-sage/30 text-charcoal placeholder:text-sage opacity-60 pointer-events-none"
-            />
-            <span className="absolute top-1/2 right-3 -translate-y-1/2 text-xs bg-terracotta/10 text-terracotta px-2 py-0.5 rounded-full font-medium">
-              Coming Soon {'\u2728'}
-            </span>
-          </div>
+          <input
+            id="keywords"
+            type="text"
+            value={keywords}
+            onChange={(e) => setKeywords(e.target.value)}
+            placeholder="e.g. live music, hiking trails, cobblestone..."
+            className="focus-ring w-full px-4 py-2.5 rounded-lg bg-sand border border-sage/30 text-charcoal placeholder:text-charcoal/40"
+          />
+          <p className="text-xs text-charcoal/70 mt-1">
+            Searches city names, descriptions, and vibes
+          </p>
         </div>
       </div>
 
