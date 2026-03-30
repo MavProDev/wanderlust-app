@@ -46,11 +46,11 @@ export default function ResultsGrid({
     return (
       <div className="text-center py-16">
         <p className="text-4xl mb-3">{'\u{1F9ED}'}</p>
-        <p className="font-display italic text-xl text-charcoal/60">
+        <p className="font-display italic text-xl text-charcoal/70">
           Tell us what you&apos;re looking for and we&apos;ll find your next
           adventure
         </p>
-        <p className="text-sm text-sage mt-2">
+        <p className="text-sm text-charcoal/70 mt-2">
           Press <kbd className="px-1.5 py-0.5 rounded bg-sage/10 text-charcoal font-mono text-xs">/</kbd> to jump to the city field
         </p>
       </div>
@@ -78,7 +78,7 @@ export default function ResultsGrid({
     return (
       <div className="text-center py-16">
         <p className="text-4xl mb-3">{'\u{1F9ED}'}</p>
-        <p className="font-display text-lg text-charcoal/60">
+        <p className="font-display text-lg text-charcoal/70">
           No destinations matched &mdash; try widening your distance or picking
           different vibes!
         </p>
@@ -104,7 +104,7 @@ export default function ResultsGrid({
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-6">
         <h2 className="font-display font-bold text-2xl md:text-3xl text-charcoal">
           {hasDistances ? 'Your Next Adventure' : 'Random Picks'}
-          <span className="ml-2 text-base font-body font-normal text-sage">
+          <span className="ml-2 text-base font-body font-normal text-charcoal/70">
             {results.length} {results.length === 1 ? 'destination' : 'destinations'} found
           </span>
         </h2>
@@ -122,7 +122,7 @@ export default function ResultsGrid({
                   ${
                     sortMode === btn.mode
                       ? 'border-b-2 border-terracotta text-terracotta'
-                      : 'text-charcoal/60 hover:text-charcoal'
+                      : 'text-charcoal/70 hover:text-charcoal'
                   }
                 `}
               >

@@ -163,7 +163,7 @@ export default function Home() {
             <h1 className="font-display font-black text-5xl md:text-7xl text-charcoal neon-title">
               Wanderlust
             </h1>
-            <p className="font-display text-xl text-charcoal/60 mt-2">
+            <p className="font-display text-xl text-charcoal/70 mt-2">
               Where should you go next?
             </p>
           </div>
@@ -192,7 +192,7 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="text-center py-8 opacity-40 text-xs text-charcoal">
+      <footer className="text-center py-8 text-xs text-charcoal/50">
         <p>
           100% client-side. No data stored. No tracking. Your info never leaves
           your browser.

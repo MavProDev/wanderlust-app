@@ -67,9 +67,9 @@ export default function DestinationCard({ city, index }: DestinationCardProps) {
 
         {/* State + distance badge */}
         <div className="flex items-center gap-2 mt-1">
-          <span className="text-sm text-sage">{city.state}</span>
+          <span className="text-sm text-charcoal/70">{city.state}</span>
           {city.distance > 0 && (
-            <span className="inline-block bg-sage/20 text-sage rounded-full px-3 py-0.5 text-sm font-medium">
+            <span className="inline-block bg-sage/20 text-charcoal/70 rounded-full px-3 py-0.5 text-sm font-medium">
               {formatDistance(city.distance)} mi
             </span>
           )}
@@ -78,7 +78,7 @@ export default function DestinationCard({ city, index }: DestinationCardProps) {
         {/* Weather hint */}
         <p
           className={`text-xs mt-1.5 ${
-            isGreatTime ? 'text-forest' : 'text-sage'
+            isGreatTime ? 'text-forest' : 'text-charcoal/70'
           }`}
         >
           {city.weatherHint}
@@ -109,7 +109,7 @@ export default function DestinationCard({ city, index }: DestinationCardProps) {
         </div>
 
         {/* Best seasons with emoji badges */}
-        <p className="text-xs text-sage mt-2">
+        <p className="text-xs text-charcoal/70 mt-2">
           Best seasons:{' '}
           {city.bestSeasons.map((s, i) => (
             <span key={s} className="capitalize">

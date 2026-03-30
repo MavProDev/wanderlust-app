@@ -128,7 +128,7 @@ export default function SearchForm({ onSearch, onSurpriseMe, cityError, initialP
             aria-valuetext={`${maxDistance} miles, ${getDistanceLabel(maxDistance)}`}
             className="focus-ring w-full"
           />
-          <div className="flex justify-between text-[10px] text-sage mt-0.5 px-0.5">
+          <div className="flex justify-between text-[10px] text-charcoal/70 mt-0.5 px-0.5">
             <span>50</span>
             <span>|</span>
             <span>|</span>
@@ -267,7 +267,7 @@ export default function SearchForm({ onSearch, onSurpriseMe, cityError, initialP
         <button
           type="button"
           onClick={handleClear}
-          className="focus-ring block mx-auto mt-3 text-xs text-sage hover:text-terracotta transition-colors"
+          className="focus-ring block mx-auto mt-3 text-xs text-charcoal/70 hover:text-terracotta transition-colors"
         >
           Clear all filters
         </button>

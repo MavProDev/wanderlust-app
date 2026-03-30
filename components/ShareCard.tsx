@@ -160,7 +160,7 @@ export default function ShareCard({ city, onClose }: ShareCardProps) {
           type="button"
           onClick={onClose}
           aria-label="Close share dialog"
-          className="focus-ring absolute top-4 right-4 text-charcoal/60 hover:text-charcoal text-xl leading-none p-1"
+          className="focus-ring absolute top-4 right-4 text-charcoal/70 hover:text-charcoal text-xl leading-none p-1"
         >
           {'\u2715'}
         </button>
@@ -195,7 +195,7 @@ export default function ShareCard({ city, onClose }: ShareCardProps) {
           />
           {customImage ? (
             <div className="flex items-center gap-2">
-              <span className="text-xs text-sage">
+              <span className="text-xs text-charcoal/70">
                 Using your photo
               </span>
               <button
@@ -209,7 +209,7 @@ export default function ShareCard({ city, onClose }: ShareCardProps) {
           ) : (
             <label
               htmlFor="custom-card-image"
-              className="focus-ring inline-flex items-center gap-1.5 text-xs text-sage hover:text-terracotta cursor-pointer transition-colors"
+              className="focus-ring inline-flex items-center gap-1.5 text-xs text-charcoal/70 hover:text-terracotta cursor-pointer transition-colors"
             >
               {'\u{1F4F7}'} Use your own photo as background
             </label>
