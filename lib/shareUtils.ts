@@ -10,7 +10,8 @@ export function getDistanceLabel(miles: number): string {
   if (miles <= 400) return 'Weekend Drive';
   if (miles <= 800) return 'Road Trip';
   if (miles <= 1500) return 'Cross Country';
-  return 'Fly Me Out';
+  if (miles <= 4000) return 'Fly Me Out';
+  return 'World Explorer';
 }
 
 export function getFirstSentence(blurb: string): string {

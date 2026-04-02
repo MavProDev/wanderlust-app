@@ -115,7 +115,7 @@ export default function SearchForm({ onSearch, onSurpriseMe, cityError, initialP
             id="distance"
             type="range"
             min={50}
-            max={3000}
+            max={8000}
             step={50}
             value={maxDistance}
             onChange={(e) => setMaxDistance(Number(e.target.value))}
@@ -128,7 +128,7 @@ export default function SearchForm({ onSearch, onSurpriseMe, cityError, initialP
             <span>|</span>
             <span>|</span>
             <span>|</span>
-            <span>3000</span>
+            <span>8000</span>
           </div>
           <p className="text-sm mt-1 text-charcoal">
             {maxDistance.toLocaleString()} mi &middot;{' '}

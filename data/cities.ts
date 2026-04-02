@@ -2298,6 +2298,14 @@ const additionalDestinations: City[] = [
   },
 ];
 
+// Expansion packs
+import { mountainAndParks } from './cities-mountain';
+import { coastalAndBeach } from './cities-coastal';
+import { foodAndCulture } from './cities-culture';
+import { hiddenGems } from './cities-gems';
+import { japan } from './cities-japan';
+import { australia } from './cities-australia';
+
 export const CITIES: City[] = [
   ...northeast,
   ...southeast,
@@ -2310,4 +2318,10 @@ export const CITIES: City[] = [
   ...pacificIslands,
   ...plainsFrontier,
   ...additionalDestinations,
+  ...mountainAndParks,
+  ...coastalAndBeach,
+  ...foodAndCulture,
+  ...hiddenGems,
+  ...japan,
+  ...australia,
 ];

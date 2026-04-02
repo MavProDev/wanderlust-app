@@ -133,7 +133,7 @@ export default function Home() {
   }, [executeSearch]);
 
   const handleSurpriseMe = () => {
-    const distances = [300, 500, 800, 1200, 2000];
+    const distances = [300, 500, 800, 1200, 2000, 4000, 6000];
     const modes: ('drive' | 'fly')[] = ['drive', 'fly'];
     const trips: ('day' | 'weekend' | '3-5days' | 'week')[] = ['weekend', '3-5days', 'week'];
 
