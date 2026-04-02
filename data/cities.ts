@@ -7,11 +7,9 @@ const northeast: City[] = [
     lat: 40.7128,
     lng: -74.006,
     vibes: ['city', 'nightlife', 'food', 'history'],
-    populationTier: 'metro',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'The city that never sleeps delivers world-class museums, Broadway shows, and pizza worth arguing about. From Central Park to the Brooklyn Bridge, every neighborhood feels like its own universe.',
-    events: [],
   },
   {
     name: 'Boston',
@@ -19,11 +17,9 @@ const northeast: City[] = [
     lat: 42.3601,
     lng: -71.0589,
     vibes: ['city', 'history', 'food'],
-    populationTier: 'metro',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Walk the Freedom Trail past Paul Revere\'s house, then refuel with clam chowder at Faneuil Hall. The cobblestone streets of Beacon Hill and the energy of Fenway Park make Boston unforgettable.',
-    events: [],
   },
   {
     name: 'Philadelphia',
@@ -31,11 +27,9 @@ const northeast: City[] = [
     lat: 39.9526,
     lng: -75.1652,
     vibes: ['city', 'history', 'food'],
-    populationTier: 'metro',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Home of the Liberty Bell, Rocky Steps, and the legendary cheesesteak rivalry between Pat\'s and Geno\'s. The Reading Terminal Market alone is worth the trip for its Pennsylvania Dutch soft pretzels and roast pork sandwiches.',
-    events: [],
   },
   {
     name: 'Portland',
@@ -43,11 +37,9 @@ const northeast: City[] = [
     lat: 43.6591,
     lng: -70.2568,
     vibes: ['food', 'offbeat', 'beach'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'This waterfront gem on Casco Bay serves up some of the East Coast\'s best lobster rolls and craft beer. Stroll the Old Port\'s brick-lined streets and catch a lighthouse tour at Portland Head Light.',
-    events: [],
   },
   {
     name: 'Providence',
@@ -55,11 +47,9 @@ const northeast: City[] = [
     lat: 41.824,
     lng: -71.4128,
     vibes: ['food', 'city', 'offbeat'],
-    populationTier: 'medium',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'RISD and Brown University give Providence an arty, intellectual vibe, while Federal Hill serves up Italian food rivaling the North End. Catch WaterFire on the river for a magical evening of floating bonfires.',
-    events: [],
   },
   {
     name: 'Burlington',
@@ -67,11 +57,9 @@ const northeast: City[] = [
     lat: 44.4759,
     lng: -73.2121,
     vibes: ['outdoors', 'food', 'offbeat', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'Perched on Lake Champlain with the Green Mountains as a backdrop, Burlington\'s Church Street Marketplace buzzes with local shops and farm-to-table restaurants. Ben & Jerry\'s was born here, and the fall foliage is legendary.',
-    events: [],
   },
   {
     name: 'Cape May',
@@ -79,11 +67,9 @@ const northeast: City[] = [
     lat: 38.9351,
     lng: -74.906,
     vibes: ['beach', 'history', 'family'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'This Victorian seaside jewel at the southern tip of New Jersey is packed with colorful gingerbread houses and pristine beaches. Climb the Cape May Lighthouse for panoramic ocean views and spot dolphins from the shore.',
-    events: [],
   },
   {
     name: 'Bar Harbor',
@@ -91,11 +77,9 @@ const northeast: City[] = [
     lat: 44.3876,
     lng: -68.2039,
     vibes: ['outdoors', 'family', 'beach'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'The gateway to Acadia National Park, where Cadillac Mountain catches the first sunrise in the U.S. Feast on lobster bakes by the harbor and hike the stunning Jordan Pond trail.',
-    events: [],
   },
   {
     name: 'Newport',
@@ -103,11 +87,9 @@ const northeast: City[] = [
     lat: 41.4901,
     lng: -71.3128,
     vibes: ['history', 'beach', 'family'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'Walk the Cliff Walk past Gilded Age mansions like The Breakers and Marble House with the Atlantic crashing below. Newport\'s sailing heritage and oceanfront seafood make it a quintessential New England escape.',
-    events: [],
   },
   {
     name: 'Saratoga Springs',
@@ -115,11 +97,9 @@ const northeast: City[] = [
     lat: 43.0831,
     lng: -73.7846,
     vibes: ['history', 'food', 'outdoors'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'Famous for its thoroughbred horse racing at Saratoga Race Course and natural mineral springs in Saratoga Spa State Park. Broadway\'s charming shops and the performing arts center at SPAC keep visitors entertained year-round.',
-    events: [],
   },
   {
     name: 'Ithaca',
@@ -127,11 +107,9 @@ const northeast: City[] = [
     lat: 42.444,
     lng: -76.5019,
     vibes: ['outdoors', 'offbeat', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'summer', 'fall'],
     blurb:
       'Gorges are gorgeous in this college town, where Taughannock Falls plunges higher than Niagara and Cornell\'s campus overlooks Cayuga Lake. The Ithaca Farmers Market and Moosewood Restaurant are pilgrimages for food lovers.',
-    events: [],
   },
   {
     name: 'Mystic',
@@ -139,11 +117,9 @@ const northeast: City[] = [
     lat: 41.3543,
     lng: -71.9662,
     vibes: ['history', 'family', 'food'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'Mystic Seaport Museum brings maritime history to life with tall ships and a recreated 19th-century village. Grab a seat at Mystic Pizza (yes, from the movie) and explore the beluga whales at Mystic Aquarium.',
-    events: [],
   },
 ];
 
@@ -154,13 +130,11 @@ const southeast: City[] = [
     lat: 25.7617,
     lng: -80.1918,
     vibes: ['beach', 'nightlife', 'food', 'city'],
-    populationTier: 'metro',
     bestSeasons: ['winter', 'spring'],
     blurb:
       'Art Deco buildings line Ocean Drive in South Beach while Little Havana pulses with cafecito and domino games on Calle Ocho. The Wynwood Walls turn entire city blocks into an open-air street art gallery.',
     weatherAdvisory:
       'Hurricane season runs June–November — check forecasts before booking summer trips.',
-    events: [],
   },
   {
     name: 'Charleston',
@@ -168,11 +142,9 @@ const southeast: City[] = [
     lat: 32.7765,
     lng: -79.9311,
     vibes: ['history', 'food', 'beach'],
-    populationTier: 'medium',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Rainbow Row\'s pastel houses and the Battery\'s waterfront promenade set the scene in this holy city of Southern charm. She-crab soup, shrimp and grits at Husk, and carriage rides through the French Quarter seal the deal.',
-    events: [],
   },
   {
     name: 'Savannah',
@@ -180,11 +152,9 @@ const southeast: City[] = [
     lat: 32.0809,
     lng: -81.0912,
     vibes: ['history', 'food', 'offbeat'],
-    populationTier: 'medium',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Spanish moss drapes over 22 garden squares in this hauntingly beautiful city straight out of Midnight in the Garden of Good and Evil. River Street\'s cobblestones lead to praline shops and Paula Deen\'s famous Lady & Sons restaurant.',
-    events: [],
   },
   {
     name: 'Asheville',
@@ -192,11 +162,9 @@ const southeast: City[] = [
     lat: 35.5951,
     lng: -82.5515,
     vibes: ['mountains', 'food', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'summer', 'fall'],
     blurb:
       'Nestled in the Blue Ridge Mountains, Asheville pairs the grandeur of the Biltmore Estate with one of America\'s densest brewery scenes. The funky arts district and farm-to-table dining along the French Broad River keep things deliciously weird.',
-    events: [],
   },
   {
     name: 'Nashville',
@@ -204,11 +172,9 @@ const southeast: City[] = [
     lat: 36.1627,
     lng: -86.7816,
     vibes: ['nightlife', 'food', 'city'],
-    populationTier: 'metro',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Honky-tonks on Broadway blast live music until the early hours, while hot chicken from Prince\'s or Hattie B\'s will set your mouth on fire. The Grand Ole Opry and the full-scale Parthenon replica make Nashville unlike anywhere else.',
-    events: [],
   },
   {
     name: 'Key West',
@@ -216,13 +182,11 @@ const southeast: City[] = [
     lat: 24.5551,
     lng: -81.78,
     vibes: ['beach', 'nightlife', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['winter', 'spring'],
     blurb:
       'Drive the Overseas Highway to this island paradise where Hemingway\'s six-toed cats still roam and sunset celebrations happen nightly at Mallory Square. Duval Street\'s bars, key lime pie, and turquoise waters deliver pure tropical bliss.',
     weatherAdvisory:
       'Hurricane season runs June–November — a heads up for summer travelers.',
-    events: [],
   },
   {
     name: 'St. Augustine',
@@ -230,11 +194,9 @@ const southeast: City[] = [
     lat: 29.8918,
     lng: -81.3145,
     vibes: ['history', 'beach', 'family'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall', 'winter'],
     blurb:
       'America\'s oldest city dazzles with the Castillo de San Marcos, a 17th-century Spanish stone fortress right on the waterfront. Stroll St. George Street for local shops and datil pepper hot sauce, then hit the beach at Anastasia State Park.',
-    events: [],
   },
   {
     name: 'Chattanooga',
@@ -242,11 +204,9 @@ const southeast: City[] = [
     lat: 35.0456,
     lng: -85.3097,
     vibes: ['outdoors', 'family', 'budget'],
-    populationTier: 'medium',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Lookout Mountain offers hang gliding, Ruby Falls underground waterfall, and Rock City\'s panoramic views of seven states. The revitalized riverfront and free electric shuttle make Chattanooga one of the South\'s best affordable getaways.',
-    events: [],
   },
   {
     name: 'Wilmington',
@@ -254,11 +214,9 @@ const southeast: City[] = [
     lat: 34.2257,
     lng: -77.9447,
     vibes: ['beach', 'history', 'family'],
-    populationTier: 'medium',
     bestSeasons: ['spring', 'summer', 'fall'],
     blurb:
       'The Riverwalk winds along the Cape Fear River past historic cotton exchange buildings, while Wrightsville Beach offers perfect waves just minutes away. The USS North Carolina battleship sits dramatically across the water from downtown.',
-    events: [],
   },
   {
     name: 'Beaufort',
@@ -266,11 +224,9 @@ const southeast: City[] = [
     lat: 32.4316,
     lng: -80.6698,
     vibes: ['history', 'beach', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Antebellum mansions line Bay Street in this Lowcountry gem where Pat Conroy found his muse. Hunting Island State Park\'s lighthouse and maritime forest feel worlds away from the mainland, and the Gullah culture adds rich history.',
-    events: [],
   },
   {
     name: 'Hot Springs',
@@ -278,11 +234,9 @@ const southeast: City[] = [
     lat: 34.5037,
     lng: -93.0552,
     vibes: ['history', 'outdoors', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Bathhouse Row in Hot Springs National Park is the only national park in a downtown, where you can still soak in naturally heated thermal waters. Al Capone used to vacation here, and the Gangster Museum tells the whole wild story.',
-    events: [],
   },
   {
     name: 'Oxford',
@@ -290,11 +244,9 @@ const southeast: City[] = [
     lat: 34.3665,
     lng: -89.5192,
     vibes: ['food', 'history', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'William Faulkner\'s literary legacy permeates this charming college town, where you can visit Rowan Oak and browse the legendary Square Books. The Square\'s restaurants serve elevated Southern cuisine that punches way above this small town\'s weight.',
-    events: [],
   },
 ];
 
@@ -305,11 +257,9 @@ const midAtlantic: City[] = [
     lat: 38.9072,
     lng: -77.0369,
     vibes: ['history', 'city', 'food'],
-    populationTier: 'metro',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Cherry blossoms frame the Tidal Basin each spring while the Smithsonian museums offer endless free exploration along the National Mall. Georgetown\'s cobblestone streets and the buzzing U Street corridor keep the culture flowing beyond the monuments.',
-    events: [],
   },
   {
     name: 'Baltimore',
@@ -317,11 +267,9 @@ const midAtlantic: City[] = [
     lat: 39.2904,
     lng: -76.6122,
     vibes: ['food', 'history', 'city'],
-    populationTier: 'large',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Crack open steamed crabs seasoned with Old Bay at the Inner Harbor, then explore the National Aquarium and Fort McHenry where the Star-Spangled Banner was born. Fells Point\'s waterfront bars and Hampden\'s quirky boutiques round out Charm City.',
-    events: [],
   },
   {
     name: 'Richmond',
@@ -329,11 +277,9 @@ const midAtlantic: City[] = [
     lat: 37.5407,
     lng: -77.436,
     vibes: ['history', 'food', 'outdoors'],
-    populationTier: 'large',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'The former Confederate capital has reinvented itself with a booming craft brewery scene along the James River and the stunning Virginia Museum of Fine Arts. Kayak the Class III–IV rapids right through downtown or explore the murals of the Arts District.',
-    events: [],
   },
   {
     name: 'Virginia Beach',
@@ -341,11 +287,9 @@ const midAtlantic: City[] = [
     lat: 36.8529,
     lng: -75.978,
     vibes: ['beach', 'family', 'outdoors'],
-    populationTier: 'large',
     bestSeasons: ['summer'],
     blurb:
       'Three miles of boardwalk stretch along the Atlantic with a massive King Neptune statue standing guard. First Landing State Park offers cypress swamp trails, and the oceanfront strip buzzes with live music and fresh seafood shacks.',
-    events: [],
   },
   {
     name: 'Charlottesville',
@@ -353,11 +297,9 @@ const midAtlantic: City[] = [
     lat: 38.0293,
     lng: -78.4767,
     vibes: ['history', 'food', 'outdoors'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Thomas Jefferson\'s Monticello and the University of Virginia\'s UNESCO-listed Rotunda anchor this Blue Ridge foothills town. The surrounding Monticello Wine Trail features dozens of vineyards with stunning mountain views.',
-    events: [],
   },
   {
     name: 'Annapolis',
@@ -365,11 +307,9 @@ const midAtlantic: City[] = [
     lat: 38.9784,
     lng: -76.4922,
     vibes: ['history', 'food', 'beach'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'summer', 'fall'],
     blurb:
       'The sailing capital of the U.S. features the Naval Academy\'s stunning Beaux-Arts campus and the oldest state house still in continuous use. Dock Street\'s crab cakes and the City Dock waterfront scene make this Chesapeake Bay gem irresistible.',
-    events: [],
   },
   {
     name: 'Gettysburg',
@@ -377,11 +317,9 @@ const midAtlantic: City[] = [
     lat: 39.8309,
     lng: -77.2311,
     vibes: ['history', 'family', 'outdoors'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'summer', 'fall'],
     blurb:
       'Walk the hallowed ground where Pickett\'s Charge changed the course of the Civil War, and stand where Lincoln delivered the Gettysburg Address. The battlefield\'s auto tour, ghost tours, and surrounding apple orchards create a deeply moving visit.',
-    events: [],
   },
   {
     name: 'Shenandoah',
@@ -389,11 +327,9 @@ const midAtlantic: City[] = [
     lat: 38.6654,
     lng: -78.4594,
     vibes: ['outdoors', 'mountains', 'family'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'summer', 'fall'],
     blurb:
       'Luray Caverns\' towering stalactites and the Great Stalacpipe Organ sit at the doorstep of Shenandoah National Park and Skyline Drive. The Blue Ridge views from the 105-mile scenic road are some of the most spectacular on the East Coast.',
-    events: [],
   },
   {
     name: 'Pittsburgh',
@@ -401,11 +337,9 @@ const midAtlantic: City[] = [
     lat: 40.4406,
     lng: -79.9959,
     vibes: ['city', 'food', 'history'],
-    populationTier: 'large',
     bestSeasons: ['spring', 'summer', 'fall'],
     blurb:
       'Three rivers converge at the Point, where the Andy Warhol Museum and the Duquesne Incline reveal a city reborn from steel. Strip District markets overflow with Primanti Brothers sandwiches and pierogies that fuel this proud sports town.',
-    events: [],
   },
   {
     name: 'Lancaster',
@@ -413,11 +347,9 @@ const midAtlantic: City[] = [
     lat: 40.0379,
     lng: -76.3055,
     vibes: ['food', 'family', 'history'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'summer', 'fall'],
     blurb:
       'Amish buggies share the road alongside one of America\'s oldest farmers markets, Lancaster Central Market, operating since the 1730s. Shoofly pie, hand-rolled soft pretzels, and covered bridge tours make this Pennsylvania Dutch Country essential.',
-    events: [],
   },
   {
     name: 'Rehoboth Beach',
@@ -425,11 +357,9 @@ const midAtlantic: City[] = [
     lat: 38.721,
     lng: -75.076,
     vibes: ['beach', 'food', 'family'],
-    populationTier: 'small',
     bestSeasons: ['summer'],
     blurb:
       'Delaware\'s tax-free shopping meets a mile-long boardwalk lined with Thrasher\'s French fries, Dolle\'s saltwater taffy, and Funland rides. The LGBTQ+-friendly resort town has a welcoming vibe and some of the mid-Atlantic\'s cleanest beaches.',
-    events: [],
   },
   {
     name: 'Harrisburg',
@@ -437,11 +367,9 @@ const midAtlantic: City[] = [
     lat: 40.2732,
     lng: -76.8867,
     vibes: ['history', 'family', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Pennsylvania\'s capital sits on the Susquehanna River, where you can tour the stunning State Capitol building modeled after St. Peter\'s Basilica. Hersheypark and the Hershey Chocolate World experience are just a short drive east.',
-    events: [],
   },
 ];
 
@@ -452,11 +380,9 @@ const midwest: City[] = [
     lat: 41.8781,
     lng: -87.6298,
     vibes: ['city', 'food', 'nightlife', 'history'],
-    populationTier: 'metro',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'Deep-dish pizza at Lou Malnati\'s, the Bean in Millennium Park, and the architectural river cruise make Chicago a world-class destination. Blues clubs in Lincoln Park and the Art Institute\'s legendary collection keep you coming back.',
-    events: [],
   },
   {
     name: 'Minneapolis',
@@ -464,11 +390,9 @@ const midwest: City[] = [
     lat: 44.9778,
     lng: -93.265,
     vibes: ['city', 'outdoors', 'food'],
-    populationTier: 'large',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'The Chain of Lakes, Minnehaha Falls, and the Sculpture Garden\'s Spoonbridge and Cherry make this a beautiful Midwestern jewel. First Avenue\'s live music legacy (thanks, Prince) and the skyway system connecting downtown blocks are pure Minneapolis.',
-    events: [],
   },
   {
     name: 'Detroit',
@@ -476,11 +400,9 @@ const midwest: City[] = [
     lat: 42.3314,
     lng: -83.0458,
     vibes: ['city', 'history', 'food', 'offbeat'],
-    populationTier: 'large',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'The Motown Museum, Diego Rivera murals at the DIA, and the Henry Ford Museum tell the story of American innovation. Corktown\'s restaurants and Eastern Market\'s Saturday bustle prove the Motor City\'s comeback is real.',
-    events: [],
   },
   {
     name: 'Milwaukee',
@@ -488,11 +410,9 @@ const midwest: City[] = [
     lat: 43.0389,
     lng: -87.9065,
     vibes: ['food', 'city', 'history'],
-    populationTier: 'large',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'The Calatrava-designed Art Museum spreads its wings on Lake Michigan while the Third Ward buzzes with cheese curds and craft brews. Summerfest, the world\'s largest music festival, takes over the lakefront every June.',
-    events: [],
   },
   {
     name: 'Indianapolis',
@@ -500,11 +420,9 @@ const midwest: City[] = [
     lat: 39.7684,
     lng: -86.1581,
     vibes: ['city', 'family', 'history'],
-    populationTier: 'metro',
     bestSeasons: ['spring', 'summer', 'fall'],
     blurb:
       'The Indianapolis Motor Speedway hosts the legendary Indy 500, and the world\'s largest children\'s museum keeps families busy for days. Mass Ave\'s art galleries and the Canal Walk through White River State Park add unexpected charm.',
-    events: [],
   },
   {
     name: 'Cleveland',
@@ -512,11 +430,9 @@ const midwest: City[] = [
     lat: 41.4993,
     lng: -81.6944,
     vibes: ['city', 'history', 'food', 'budget'],
-    populationTier: 'large',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'The Rock & Roll Hall of Fame anchors a revitalized lakefront, while the West Side Market has been serving pierogies and bratwurst since 1912. Tremont\'s restaurant row and the Cleveland Museum of Art (free!) punch well above their weight.',
-    events: [],
   },
   {
     name: 'Columbus',
@@ -524,11 +440,9 @@ const midwest: City[] = [
     lat: 39.9612,
     lng: -82.9988,
     vibes: ['city', 'food', 'offbeat'],
-    populationTier: 'metro',
     bestSeasons: ['spring', 'summer', 'fall'],
     blurb:
       'The Short North Arts District connects to Ohio State\'s massive campus via a gallery-lined stretch of High Street. North Market\'s food stalls, German Village\'s brick streets, and Jeni\'s Splendid Ice Creams make Columbus a foodie sleeper hit.',
-    events: [],
   },
   {
     name: 'Kansas City',
@@ -536,11 +450,9 @@ const midwest: City[] = [
     lat: 39.0997,
     lng: -94.5786,
     vibes: ['food', 'city', 'nightlife'],
-    populationTier: 'large',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'BBQ royalty reigns at Joe\'s Kansas City, Q39, and Gates, where burnt ends are a religion. The 18th and Vine jazz district, Nelson-Atkins Museum, and the iconic Country Club Plaza fountains add culture to every saucy bite.',
-    events: [],
   },
   {
     name: 'Madison',
@@ -548,11 +460,9 @@ const midwest: City[] = [
     lat: 43.0731,
     lng: -89.4012,
     vibes: ['food', 'outdoors', 'offbeat'],
-    populationTier: 'medium',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'Set on an isthmus between two lakes, Madison\'s Saturday Dane County Farmers Market circles the State Capitol with artisan cheeses and local produce. The University of Wisconsin campus and its lakeside terrace serve up sunsets with pitchers of Spotted Cow.',
-    events: [],
   },
   {
     name: 'Ann Arbor',
@@ -560,11 +470,9 @@ const midwest: City[] = [
     lat: 42.2808,
     lng: -83.743,
     vibes: ['food', 'offbeat', 'budget'],
-    populationTier: 'medium',
     bestSeasons: ['spring', 'summer', 'fall'],
     blurb:
       'The University of Michigan gives this tree-lined town a youthful energy, while Zingerman\'s Deli has achieved national fame for its sandwiches. The Nichols Arboretum and the Ann Arbor Art Fair draw visitors from across the Midwest.',
-    events: [],
   },
   {
     name: 'Duluth',
@@ -572,13 +480,11 @@ const midwest: City[] = [
     lat: 46.7867,
     lng: -92.1005,
     vibes: ['outdoors', 'offbeat', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'Perched on the dramatic shores of Lake Superior, Duluth\'s Aerial Lift Bridge and Canal Park are iconic. Hike the Superior Hiking Trail, watch massive ore ships glide under the bridge, and warm up in cozy brewpubs.',
     weatherAdvisory:
       'Lake Superior winters are fierce — dress for subzero temps November–March.',
-    events: [],
   },
   {
     name: 'Traverse City',
@@ -586,11 +492,9 @@ const midwest: City[] = [
     lat: 44.7631,
     lng: -85.6206,
     vibes: ['food', 'outdoors', 'beach'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'The cherry capital of the world sits on Grand Traverse Bay with turquoise water that rivals the Caribbean. Sleeping Bear Dunes National Lakeshore is a short drive away, and the Old Mission Peninsula wine trail offers stunning vineyard views.',
-    events: [],
   },
 ];
 
@@ -601,11 +505,9 @@ const southCentral: City[] = [
     lat: 30.2672,
     lng: -97.7431,
     vibes: ['nightlife', 'food', 'city', 'offbeat'],
-    populationTier: 'metro',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'The live music capital of the world packs Sixth Street with honky-tonks, while South Congress serves up breakfast tacos and vintage shopping. Watch 1.5 million bats fly from under the Congress Avenue Bridge at sunset.',
-    events: [],
   },
   {
     name: 'San Antonio',
@@ -613,11 +515,9 @@ const southCentral: City[] = [
     lat: 29.4241,
     lng: -98.4936,
     vibes: ['history', 'food', 'family'],
-    populationTier: 'metro',
     bestSeasons: ['spring', 'fall', 'winter'],
     blurb:
       'The Alamo stands as a solemn reminder of Texas history, while the River Walk winds below street level with mariachi music and Tex-Mex aromas. The Pearl District\'s culinary scene and the San Antonio Missions UNESCO sites make this a must-visit.',
-    events: [],
   },
   {
     name: 'New Orleans',
@@ -625,13 +525,11 @@ const southCentral: City[] = [
     lat: 29.9511,
     lng: -90.0715,
     vibes: ['food', 'nightlife', 'history', 'offbeat'],
-    populationTier: 'large',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Beignets at Café Du Monde, jazz on Frenchmen Street, and po\'boys dripping with roast beef gravy — NOLA is a sensory overload in the best way. The Garden District\'s oak-canopied mansions and above-ground cemeteries add layers of mystery.',
     weatherAdvisory:
       'Hurricane season is June–November — summer visitors should keep an eye on forecasts.',
-    events: [],
   },
   {
     name: 'Memphis',
@@ -639,11 +537,9 @@ const southCentral: City[] = [
     lat: 35.1495,
     lng: -90.049,
     vibes: ['food', 'history', 'nightlife'],
-    populationTier: 'large',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Beale Street\'s neon blues clubs, Graceland\'s shag carpeting, and dry-rubbed ribs from Central BBQ define this Mississippi River city. The National Civil Rights Museum at the Lorraine Motel is one of the most powerful places in America.',
-    events: [],
   },
   {
     name: 'Little Rock',
@@ -651,11 +547,9 @@ const southCentral: City[] = [
     lat: 34.7465,
     lng: -92.2896,
     vibes: ['history', 'outdoors', 'budget'],
-    populationTier: 'medium',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Central High School\'s role in the civil rights movement and the Clinton Presidential Library anchor this riverside capital. Pinnacle Mountain State Park offers quick escapes, and the SoMa district buzzes with local restaurants and breweries.',
-    events: [],
   },
   {
     name: 'Galveston',
@@ -663,13 +557,11 @@ const southCentral: City[] = [
     lat: 29.3013,
     lng: -94.7977,
     vibes: ['beach', 'history', 'family'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Victorian iron-front buildings line the Strand District in this Gulf Coast island city with a storied past. Moody Gardens\' glass pyramids, Pleasure Pier\'s carnival rides, and fresh Gulf shrimp make it Houston\'s favorite beach escape.',
     weatherAdvisory:
       'Hurricane season is June–November — check Gulf weather for summer plans.',
-    events: [],
   },
   {
     name: 'Fredericksburg',
@@ -677,11 +569,9 @@ const southCentral: City[] = [
     lat: 30.2752,
     lng: -98.872,
     vibes: ['food', 'history', 'family'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'German heritage meets Texas Hill Country in this charming town where Main Street overflows with wine tasting rooms and biergartens. Enchanted Rock\'s pink granite dome is a stunning hike, and the National Museum of the Pacific War is world-class.',
-    events: [],
   },
   {
     name: 'Natchez',
@@ -689,11 +579,9 @@ const southCentral: City[] = [
     lat: 31.5604,
     lng: -91.4032,
     vibes: ['history', 'offbeat', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Perched on bluffs above the Mississippi River, Natchez boasts more antebellum mansions than any other Southern city. The Natchez Trace Parkway begins here, and spring pilgrimages open grand homes like Longwood, an unfinished octagonal marvel.',
-    events: [],
   },
   {
     name: 'Eureka Springs',
@@ -701,11 +589,9 @@ const southCentral: City[] = [
     lat: 36.4012,
     lng: -93.738,
     vibes: ['offbeat', 'history', 'outdoors'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'summer', 'fall'],
     blurb:
       'This Victorian mountain village has no traffic lights and streets that wind through the Ozarks like a storybook. The Thorncrown Chapel\'s glass walls frame the forest, and the 1886 Crescent Hotel bills itself as America\'s most haunted.',
-    events: [],
   },
   {
     name: 'Branson',
@@ -713,11 +599,9 @@ const southCentral: City[] = [
     lat: 36.6437,
     lng: -93.2185,
     vibes: ['family', 'outdoors', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'summer', 'fall'],
     blurb:
       'Silver Dollar City\'s Ozark craft village and the Branson Strip\'s live entertainment theaters draw millions of families each year. Table Rock Lake offers bass fishing and swimming, while the Titanic Museum features actual artifacts from the ship.',
-    events: [],
   },
   {
     name: 'Shreveport',
@@ -725,11 +609,9 @@ const southCentral: City[] = [
     lat: 32.5252,
     lng: -93.7502,
     vibes: ['history', 'food', 'budget'],
-    populationTier: 'medium',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'The Red River district anchors this north Louisiana city where Creole and Southern cuisines collide over crawfish and boudin. The Shreveport Municipal Auditorium hosted the Louisiana Hayride where Elvis got his start.',
-    events: [],
   },
   {
     name: 'Biloxi',
@@ -737,13 +619,11 @@ const southCentral: City[] = [
     lat: 30.396,
     lng: -88.8853,
     vibes: ['beach', 'food', 'nightlife'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Gulf Coast casinos meet fresh-off-the-boat seafood in this resilient beach city. The Biloxi Lighthouse has survived countless hurricanes, and the maritime heritage trail connects shrimping history with white sand beaches.',
     weatherAdvisory:
       'Hurricane season is June–November — watch Gulf forecasts for summer trips.',
-    events: [],
   },
 ];
 
@@ -754,11 +634,9 @@ const mountainWest: City[] = [
     lat: 39.7392,
     lng: -104.9903,
     vibes: ['city', 'outdoors', 'food', 'nightlife'],
-    populationTier: 'metro',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'The Mile High City pairs 300 days of sunshine with Red Rocks Amphitheatre, Union Station\'s craft cocktail scene, and easy access to the Rockies. LoDo\'s breweries and the Denver Art Museum\'s striking architecture make it a perfect basecamp.',
-    events: [],
   },
   {
     name: 'Salt Lake City',
@@ -766,11 +644,9 @@ const mountainWest: City[] = [
     lat: 40.7608,
     lng: -111.891,
     vibes: ['outdoors', 'mountains', 'city'],
-    populationTier: 'large',
     bestSeasons: ['summer', 'winter'],
     blurb:
       'World-class skiing at Alta and Snowbird is just 30 minutes from Temple Square and the vibrant downtown. The Wasatch Mountains frame every view, and the city\'s surprising food scene and craft beer culture keep growing.',
-    events: [],
   },
   {
     name: 'Boise',
@@ -778,11 +654,9 @@ const mountainWest: City[] = [
     lat: 43.615,
     lng: -116.2023,
     vibes: ['outdoors', 'food', 'budget'],
-    populationTier: 'large',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'The Boise River Greenbelt winds 25 miles through the city, perfect for floating on inner tubes in summer. The Basque Block celebrates Idaho\'s unique Basque heritage with pintxos and croquetas you won\'t find elsewhere in the U.S.',
-    events: [],
   },
   {
     name: 'Missoula',
@@ -790,11 +664,9 @@ const mountainWest: City[] = [
     lat: 46.8721,
     lng: -113.994,
     vibes: ['outdoors', 'offbeat', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'Norman Maclean\'s "A River Runs Through It" was set here, and the fly fishing on the Clark Fork and Blackfoot Rivers lives up to the legend. The hip downtown, Carousel for Missoula, and surrounding wilderness make this a Montana gem.',
-    events: [],
   },
   {
     name: 'Jackson',
@@ -802,11 +674,9 @@ const mountainWest: City[] = [
     lat: 43.4799,
     lng: -110.7624,
     vibes: ['mountains', 'outdoors', 'family'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'winter'],
     blurb:
       'The elk-antler arches of Jackson\'s Town Square welcome visitors to the gateway of Grand Teton and Yellowstone National Parks. Jackson Hole Mountain Resort offers legendary skiing, and the Snake River provides world-class rafting.',
-    events: [],
   },
   {
     name: 'Park City',
@@ -814,11 +684,9 @@ const mountainWest: City[] = [
     lat: 40.6461,
     lng: -111.498,
     vibes: ['mountains', 'outdoors', 'nightlife'],
-    populationTier: 'small',
     bestSeasons: ['winter', 'summer'],
     blurb:
       'Home of the Sundance Film Festival and two world-class ski resorts, Park City\'s historic Main Street comes alive with galleries and après-ski bars. The Olympic bobsled track from 2002 lets you ride a real sled at terrifying speeds.',
-    events: [],
   },
   {
     name: 'Telluride',
@@ -826,11 +694,9 @@ const mountainWest: City[] = [
     lat: 37.9375,
     lng: -107.8123,
     vibes: ['mountains', 'outdoors', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'winter'],
     blurb:
       'Box canyon walls tower over this former mining town where a free gondola connects to Mountain Village. Bridal Veil Falls cascades 365 feet at the end of the valley, and summer festivals bring bluegrass, film, and mushroom lovers together.',
-    events: [],
   },
   {
     name: 'Whitefish',
@@ -838,11 +704,9 @@ const mountainWest: City[] = [
     lat: 48.4106,
     lng: -114.3529,
     vibes: ['mountains', 'outdoors', 'family'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'winter'],
     blurb:
       'Whitefish Mountain Resort delivers big ski energy while Glacier National Park\'s Going-to-the-Sun Road sits just 25 miles away. The charming downtown of this mountain hamlet serves up craft brews and huckleberry everything.',
-    events: [],
   },
   {
     name: 'Sun Valley',
@@ -850,11 +714,9 @@ const mountainWest: City[] = [
     lat: 43.6975,
     lng: -114.3514,
     vibes: ['mountains', 'outdoors'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'winter'],
     blurb:
       'America\'s first destination ski resort still dazzles on Bald Mountain, where Hemingway found inspiration and Hollywood stars once flocked. The Wood River Trail and Sawtooth National Recreation Area offer endless summer adventures.',
-    events: [],
   },
   {
     name: 'Moab',
@@ -862,11 +724,9 @@ const mountainWest: City[] = [
     lat: 38.5733,
     lng: -109.5498,
     vibes: ['outdoors', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Arches National Park\'s Delicate Arch glows orange at sunset, and Canyonlands\' vast mesa views stretch to infinity. Mountain biking the Slickrock Trail and rafting the Colorado River make Moab an adrenaline junkie\'s paradise.',
-    events: [],
   },
   {
     name: 'Durango',
@@ -874,11 +734,9 @@ const mountainWest: City[] = [
     lat: 37.2753,
     lng: -107.8801,
     vibes: ['mountains', 'outdoors', 'history'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'The Durango & Silverton Narrow Gauge Railroad chugs through spectacular San Juan Mountain scenery on tracks laid in 1882. Main Avenue\'s Old West saloons and the Animas River\'s kayak runs blend frontier history with outdoor adventure.',
-    events: [],
   },
   {
     name: 'Bozeman',
@@ -886,11 +744,9 @@ const mountainWest: City[] = [
     lat: 45.677,
     lng: -111.0429,
     vibes: ['outdoors', 'mountains', 'food'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'winter'],
     blurb:
       'Yellowstone\'s north entrance is a short drive from this booming college town where the Museum of the Rockies houses one of the world\'s best dinosaur collections. Bridger Bowl\'s legendary cold smoke powder and Main Street\'s restaurants seal the deal.',
-    events: [],
   },
 ];
 
@@ -901,13 +757,11 @@ const southwest: City[] = [
     lat: 33.4484,
     lng: -112.074,
     vibes: ['outdoors', 'food', 'city'],
-    populationTier: 'metro',
     bestSeasons: ['winter', 'spring'],
     blurb:
       'Camelback Mountain\'s summit trail rewards hikers with sweeping desert views, while Old Town Scottsdale\'s galleries and Heard Museum celebrate Native American art. The Valley of the Sun\'s resort pools and Sonoran cuisine make winter escapes ideal.',
     weatherAdvisory:
       'Summer temps regularly exceed 110°F — spring and fall are much more comfortable.',
-    events: [],
   },
   {
     name: 'Santa Fe',
@@ -915,11 +769,9 @@ const southwest: City[] = [
     lat: 35.687,
     lng: -105.9378,
     vibes: ['food', 'history', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Adobe architecture, turquoise jewelry, and green chile stew define America\'s oldest capital city. Canyon Road\'s 100+ art galleries and the miraculous Loretto Chapel staircase enchant visitors under enormous Southwestern skies.',
-    events: [],
   },
   {
     name: 'Tucson',
@@ -927,13 +779,11 @@ const southwest: City[] = [
     lat: 32.2226,
     lng: -110.9747,
     vibes: ['food', 'outdoors', 'history'],
-    populationTier: 'large',
     bestSeasons: ['winter', 'spring', 'fall'],
     blurb:
       'America\'s first UNESCO City of Gastronomy serves Sonoran hot dogs and legendary Mexican food south of downtown on Fourth Avenue. Saguaro National Park flanks both sides of the city with iconic cactus-studded landscapes.',
     weatherAdvisory:
       'Summer heat can be intense (100°F+) — spring and fall offer perfect desert weather.',
-    events: [],
   },
   {
     name: 'Sedona',
@@ -941,11 +791,9 @@ const southwest: City[] = [
     lat: 34.8697,
     lng: -111.761,
     vibes: ['outdoors', 'offbeat', 'mountains'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Towering red rock formations like Cathedral Rock and Bell Rock glow at sunset against impossibly blue skies. Vortex seekers, jeep tour adventurers, and hikers converge on this mystical desert town along Oak Creek Canyon.',
-    events: [],
   },
   {
     name: 'Albuquerque',
@@ -953,11 +801,9 @@ const southwest: City[] = [
     lat: 35.0844,
     lng: -106.6504,
     vibes: ['food', 'history', 'offbeat'],
-    populationTier: 'large',
     bestSeasons: ['fall', 'spring'],
     blurb:
       'The International Balloon Fiesta fills October skies with hundreds of colorful hot air balloons over the Rio Grande. Old Town\'s adobe plaza dates to 1706, and the Sandia Peak Tramway whisks you 10,378 feet up for jaw-dropping views.',
-    events: [],
   },
   {
     name: 'Las Vegas',
@@ -965,13 +811,11 @@ const southwest: City[] = [
     lat: 36.1699,
     lng: -115.1398,
     vibes: ['nightlife', 'food', 'city'],
-    populationTier: 'metro',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'The Strip\'s neon spectacle features world-class restaurants from celebrity chefs, Cirque du Soleil shows, and the Bellagio fountains. Day trips to Red Rock Canyon and the Valley of Fire add natural beauty to the sensory overload.',
     weatherAdvisory:
       'Summer temps can hit 115°F — spring and fall are ideal for walking the Strip.',
-    events: [],
   },
   {
     name: 'Flagstaff',
@@ -979,11 +823,9 @@ const southwest: City[] = [
     lat: 35.1983,
     lng: -111.6513,
     vibes: ['outdoors', 'mountains', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'Ponderosa pines and Route 66 nostalgia define this mountain town that serves as the gateway to the Grand Canyon. Lowell Observatory where Pluto was discovered offers stargazing under some of the darkest skies in America.',
-    events: [],
   },
   {
     name: 'Taos',
@@ -991,11 +833,9 @@ const southwest: City[] = [
     lat: 36.4072,
     lng: -105.5731,
     vibes: ['history', 'offbeat', 'mountains'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'Taos Pueblo has been continuously inhabited for over 1,000 years and stands as a UNESCO World Heritage Site. The Rio Grande Gorge Bridge spans a dramatic 650-foot chasm, and the Taos Ski Valley delivers serious powder.',
-    events: [],
   },
   {
     name: 'Scottsdale',
@@ -1003,11 +843,9 @@ const southwest: City[] = [
     lat: 33.4942,
     lng: -111.9261,
     vibes: ['food', 'nightlife', 'outdoors'],
-    populationTier: 'large',
     bestSeasons: ['winter', 'spring'],
     blurb:
       'Frank Lloyd Wright\'s Taliesin West anchors the cultural side of this desert resort city, while Old Town Scottsdale mixes upscale dining with cowboy kitsch. The McDowell Sonoran Preserve offers pristine desert hiking minutes from world-class spas.',
-    events: [],
   },
   {
     name: 'Page',
@@ -1015,11 +853,9 @@ const southwest: City[] = [
     lat: 36.9147,
     lng: -111.4558,
     vibes: ['outdoors', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Antelope Canyon\'s swirling sandstone walls create some of the most photographed scenes on Earth. Horseshoe Bend\'s jaw-dropping Colorado River overlook and the surreal blue waters of Lake Powell are all within minutes of town.',
-    events: [],
   },
   {
     name: 'Marfa',
@@ -1027,11 +863,9 @@ const southwest: City[] = [
     lat: 30.3087,
     lng: -104.0214,
     vibes: ['offbeat', 'food'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'This tiny West Texas desert town punches above its weight with Donald Judd\'s minimalist art installations at the Chinati Foundation. The Marfa Mystery Lights, Prada Marfa sculpture, and surprisingly hip food trucks draw art pilgrims from around the world.',
-    events: [],
   },
   {
     name: 'Roswell',
@@ -1039,11 +873,9 @@ const southwest: City[] = [
     lat: 33.3943,
     lng: -104.523,
     vibes: ['offbeat', 'family', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Alien-themed everything awaits at the International UFO Museum, where the 1947 crash incident lives on in delightful kitsch. Street lamps shaped like alien heads and themed restaurants make Roswell the quirkiest stop in New Mexico.',
-    events: [],
   },
 ];
 
@@ -1054,11 +886,9 @@ const westCoast: City[] = [
     lat: 34.0522,
     lng: -118.2437,
     vibes: ['city', 'beach', 'food', 'nightlife'],
-    populationTier: 'metro',
     bestSeasons: ['spring', 'fall', 'winter'],
     blurb:
       'From the Hollywood Sign to the Getty Center\'s hilltop gardens, LA sprawls with iconic landmarks and world-class tacos in every neighborhood. Venice Beach\'s boardwalk, Griffith Observatory sunsets, and the arts scene in DTLA make it endlessly explorable.',
-    events: [],
   },
   {
     name: 'San Francisco',
@@ -1066,11 +896,9 @@ const westCoast: City[] = [
     lat: 37.7749,
     lng: -122.4194,
     vibes: ['city', 'food', 'history', 'offbeat'],
-    populationTier: 'metro',
     bestSeasons: ['fall', 'spring'],
     blurb:
       'The Golden Gate Bridge, cable cars climbing Nob Hill, and Alcatraz across the bay make SF instantly iconic. The Mission\'s burritos, Chinatown\'s dim sum, and Fisherman\'s Wharf\'s sourdough bread bowls fuel foggy explorations.',
-    events: [],
   },
   {
     name: 'San Diego',
@@ -1078,11 +906,9 @@ const westCoast: City[] = [
     lat: 32.7157,
     lng: -117.1611,
     vibes: ['beach', 'family', 'food'],
-    populationTier: 'metro',
     bestSeasons: ['spring', 'summer', 'fall'],
     blurb:
       'Balboa Park\'s Spanish Colonial architecture houses the world-famous San Diego Zoo, while the Gaslamp Quarter buzzes with fish tacos and craft beer. La Jolla Cove\'s sea lions and Coronado\'s wide beach deliver year-round California perfection.',
-    events: [],
   },
   {
     name: 'Portland',
@@ -1090,11 +916,9 @@ const westCoast: City[] = [
     lat: 45.5152,
     lng: -122.6784,
     vibes: ['food', 'offbeat', 'city', 'budget'],
-    populationTier: 'large',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'Keep Portland Weird is the motto, and food carts, Powell\'s City of Books, and the International Rose Test Garden deliver on the promise. The Hawthorne and Alberta districts serve up quirky shops and craft doughnuts from Voodoo Doughnut.',
-    events: [],
   },
   {
     name: 'Seattle',
@@ -1102,11 +926,9 @@ const westCoast: City[] = [
     lat: 47.6062,
     lng: -122.3321,
     vibes: ['city', 'food', 'outdoors'],
-    populationTier: 'metro',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'Pike Place Market\'s flying fish, the Space Needle\'s panoramic views, and the original Starbucks anchor the Emerald City. Mount Rainier looms on clear days, and the Capitol Hill neighborhood serves up the best coffee culture in America.',
-    events: [],
   },
   {
     name: 'Santa Barbara',
@@ -1114,11 +936,9 @@ const westCoast: City[] = [
     lat: 34.4208,
     lng: -119.6982,
     vibes: ['beach', 'food', 'outdoors'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'summer', 'fall'],
     blurb:
       'Red-tile roofs and white stucco buildings give the American Riviera its Mediterranean charm along Stearns Wharf and State Street. The Funk Zone\'s wine tasting rooms and the Santa Ynez Valley vineyards are a short drive into paradise.',
-    events: [],
   },
   {
     name: 'Monterey',
@@ -1126,11 +946,9 @@ const westCoast: City[] = [
     lat: 36.6002,
     lng: -121.8947,
     vibes: ['beach', 'family', 'outdoors'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'summer', 'fall'],
     blurb:
       'The Monterey Bay Aquarium is a world-class wonder, and Cannery Row\'s Steinbeck heritage permeates every waterfront block. Whale watching, sea otters floating in the kelp, and 17-Mile Drive\'s coastal scenery are unforgettable.',
-    events: [],
   },
   {
     name: 'Bend',
@@ -1138,11 +956,9 @@ const westCoast: City[] = [
     lat: 44.0582,
     lng: -121.3153,
     vibes: ['outdoors', 'food', 'mountains'],
-    populationTier: 'medium',
     bestSeasons: ['summer', 'winter'],
     blurb:
       'The Deschutes River runs through town for paddleboarding, while Mt. Bachelor delivers serious skiing just 22 miles away. Smith Rock State Park\'s climbing spires and over 30 craft breweries make Bend an outdoor enthusiast\'s dream.',
-    events: [],
   },
   {
     name: 'Olympia',
@@ -1150,11 +966,9 @@ const westCoast: City[] = [
     lat: 47.0379,
     lng: -122.9007,
     vibes: ['offbeat', 'food', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'Washington\'s capital combines a thriving farmers market at the port with the Evergreen State College\'s countercultural energy. The State Capitol campus rivals DC\'s grandeur, and Olympia\'s music scene gave birth to riot grrrl and K Records.',
-    events: [],
   },
   {
     name: 'Carmel-by-the-Sea',
@@ -1162,11 +976,9 @@ const westCoast: City[] = [
     lat: 36.5552,
     lng: -121.9233,
     vibes: ['beach', 'food', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Fairy-tale cottages line streets with no addresses in this storybook village where Clint Eastwood once served as mayor. Point Lobos State Reserve\'s tide pools and the Carmel Mission\'s gardens are impossibly beautiful.',
-    events: [],
   },
   {
     name: 'Laguna Beach',
@@ -1174,11 +986,9 @@ const westCoast: City[] = [
     lat: 33.5427,
     lng: -117.7854,
     vibes: ['beach', 'food', 'outdoors'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'summer', 'fall'],
     blurb:
       'Hidden coves, tidepools at Crystal Cove, and the Pageant of the Masters (where humans recreate famous paintings) define this artist colony. The coastal trail connects secluded beaches with galleries and oceanfront dining.',
-    events: [],
   },
   {
     name: 'Half Moon Bay',
@@ -1186,11 +996,9 @@ const westCoast: City[] = [
     lat: 37.4636,
     lng: -122.4286,
     vibes: ['beach', 'food', 'outdoors'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Mavericks\' legendary big wave surf break draws the world\'s best, while the Coastside Trail offers peaceful blufftop walks. The annual Pumpkin Festival and farm-fresh artichokes at roadside stands capture the essence of coastal California.',
-    events: [],
   },
 ];
 
@@ -1201,11 +1009,9 @@ const pacificIslands: City[] = [
     lat: 21.3069,
     lng: -157.8583,
     vibes: ['beach', 'city', 'food', 'history'],
-    populationTier: 'large',
     bestSeasons: ['winter', 'spring'],
     blurb:
       'Waikiki Beach and Diamond Head crater define the skyline of this Pacific paradise, while Pearl Harbor\'s USS Arizona Memorial is profoundly moving. Plate lunches, poke bowls, and shave ice from Matsumoto\'s fuel every island adventure.',
-    events: [],
   },
   {
     name: 'Kahului',
@@ -1213,11 +1019,9 @@ const pacificIslands: City[] = [
     lat: 20.8893,
     lng: -156.4729,
     vibes: ['beach', 'outdoors', 'food'],
-    populationTier: 'small',
     bestSeasons: ['winter', 'spring', 'fall'],
     blurb:
       'Maui\'s main hub is the launching pad for the Road to Hana\'s 620 curves, bamboo forests, and black sand beaches. Haleakala\'s sunrise above the clouds at 10,023 feet is a once-in-a-lifetime experience.',
-    events: [],
   },
   {
     name: 'Lihue',
@@ -1225,11 +1029,9 @@ const pacificIslands: City[] = [
     lat: 21.9811,
     lng: -159.3711,
     vibes: ['beach', 'outdoors', 'family'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Kauai\'s gateway opens to the Na Pali Coast\'s emerald cathedral cliffs and Waimea Canyon, the Grand Canyon of the Pacific. Poipu Beach\'s monk seals and the Fern Grotto make the Garden Isle unforgettable.',
-    events: [],
   },
   {
     name: 'Juneau',
@@ -1237,11 +1039,9 @@ const pacificIslands: City[] = [
     lat: 58.3005,
     lng: -134.4197,
     vibes: ['outdoors', 'history', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['summer'],
     blurb:
       'Alaska\'s capital is only reachable by air or sea, with the Mendenhall Glacier calving icebergs just 12 miles from downtown. Whale watching in the Gastineau Channel and hiking the Tlingit trails make Juneau an unforgettable frontier capital.',
-    events: [],
   },
   {
     name: 'Anchorage',
@@ -1249,13 +1049,11 @@ const pacificIslands: City[] = [
     lat: 61.2181,
     lng: -149.9003,
     vibes: ['outdoors', 'mountains', 'offbeat'],
-    populationTier: 'large',
     bestSeasons: ['summer'],
     blurb:
       'Moose wander through neighborhoods while the Chugach Mountains tower overhead in America\'s wildest big city. The Tony Knowles Coastal Trail, Alaska Wildlife Conservation Center, and midnight sun adventures make Anchorage extraordinary.',
     weatherAdvisory:
       'Winter conditions can be extreme — spring through fall offers the best experience.',
-    events: [],
   },
   {
     name: 'Fairbanks',
@@ -1263,13 +1061,11 @@ const pacificIslands: City[] = [
     lat: 64.8378,
     lng: -147.7164,
     vibes: ['outdoors', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['summer'],
     blurb:
       'Chase the Northern Lights in winter or bask in 24 hours of summer daylight in this Interior Alaska city. The Chena Hot Springs, Pioneer Park, and the Museum of the North make Fairbanks a gateway to true Arctic adventure.',
     weatherAdvisory:
       'Winter temps can drop below -40°F — pack serious cold-weather gear December–February.',
-    events: [],
   },
   {
     name: 'Sitka',
@@ -1277,11 +1073,9 @@ const pacificIslands: City[] = [
     lat: 57.0531,
     lng: -135.33,
     vibes: ['outdoors', 'history', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['summer'],
     blurb:
       'Russian Orthodox onion domes and Tlingit totem poles share this island town where Alaska was transferred from Russia in 1867. The Sitka National Historical Park trails wind through temperate rainforest along the shoreline.',
-    events: [],
   },
   {
     name: 'Ketchikan',
@@ -1289,11 +1083,9 @@ const pacificIslands: City[] = [
     lat: 55.3422,
     lng: -131.6461,
     vibes: ['outdoors', 'history', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['summer'],
     blurb:
       'The Salmon Capital of the World features Creek Street\'s boardwalk perched over rushing water and the world\'s largest collection of standing totem poles at Saxman Village. Misty Fjords National Monument\'s granite cliffs rise 3,000 feet from the sea.',
-    events: [],
   },
   {
     name: 'Hilo',
@@ -1301,11 +1093,9 @@ const pacificIslands: City[] = [
     lat: 19.7241,
     lng: -155.0868,
     vibes: ['outdoors', 'offbeat', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['winter', 'spring'],
     blurb:
       'Rainbow Falls cascades into a tropical pool steps from downtown, while Hawaii Volcanoes National Park\'s active lava flows are a short drive away. The Hilo Farmers Market overflows with tropical fruits, orchids, and aloha on Wednesdays and Saturdays.',
-    events: [],
   },
   {
     name: 'Kailua-Kona',
@@ -1313,11 +1103,9 @@ const pacificIslands: City[] = [
     lat: 19.64,
     lng: -155.9969,
     vibes: ['beach', 'outdoors', 'food'],
-    populationTier: 'small',
     bestSeasons: ['winter', 'spring'],
     blurb:
       'The Big Island\'s sunny Kona Coast is home to world-famous coffee farms, manta ray night snorkeling, and the Ironman World Championship. Ali\'i Drive\'s oceanfront shops and Kealakekua Bay\'s pristine snorkeling make it a tropical paradise.',
-    events: [],
   },
   {
     name: 'Kodiak',
@@ -1325,11 +1113,9 @@ const pacificIslands: City[] = [
     lat: 57.79,
     lng: -152.4072,
     vibes: ['outdoors', 'history', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['summer'],
     blurb:
       'Home to the largest bears on Earth, Kodiak Island\'s wilderness is raw and magnificent. The Baranov Museum chronicles Russian colonial history, and the fishing harbors bustle with commercial boats bringing in fresh halibut and king crab.',
-    events: [],
   },
   {
     name: 'Waimea',
@@ -1337,11 +1123,9 @@ const pacificIslands: City[] = [
     lat: 20.0234,
     lng: -155.6728,
     vibes: ['outdoors', 'food', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['winter', 'spring'],
     blurb:
       'Parker Ranch\'s paniolo (Hawaiian cowboy) heritage makes Waimea unlike anywhere else in the islands. The cool upcountry climate, farm-to-table restaurants featuring Big Island beef, and views of Mauna Kea create a unique Hawaiian experience.',
-    events: [],
   },
 ];
 
@@ -1352,11 +1136,9 @@ const plainsFrontier: City[] = [
     lat: 44.0805,
     lng: -103.231,
     vibes: ['history', 'outdoors', 'family'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'Mount Rushmore and Crazy Horse Memorial are practically next door, while downtown\'s life-size bronze presidents stand on every corner. The Badlands\' otherworldly formations and Custer State Park\'s bison herds are an easy drive away.',
-    events: [],
   },
   {
     name: 'Bismarck',
@@ -1364,11 +1146,9 @@ const plainsFrontier: City[] = [
     lat: 46.8083,
     lng: -100.7837,
     vibes: ['history', 'outdoors', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'North Dakota\'s capital sits on the Missouri River with the towering Art Deco State Capitol and the North Dakota Heritage Center. Fort Abraham Lincoln State Park, where Custer departed for Little Bighorn, offers living history and river views.',
-    events: [],
   },
   {
     name: 'Sioux Falls',
@@ -1376,11 +1156,9 @@ const plainsFrontier: City[] = [
     lat: 43.546,
     lng: -96.7313,
     vibes: ['outdoors', 'food', 'budget'],
-    populationTier: 'medium',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'Falls Park\'s cascading Big Sioux River tumbles over pink quartzite in the heart of the city. The revitalized downtown\'s sculpture walk, craft breweries, and surprisingly diverse food scene make this Plains city a genuine surprise.',
-    events: [],
   },
   {
     name: 'Fargo',
@@ -1388,11 +1166,9 @@ const plainsFrontier: City[] = [
     lat: 46.8772,
     lng: -96.7898,
     vibes: ['food', 'offbeat', 'budget'],
-    populationTier: 'medium',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'Yes, the woodchipper from the movie is a photo op at the visitor center, but Fargo\'s real charm lies in its walkable downtown and NDSU campus energy. The Fargo Theatre\'s art deco marquee and the craft beer scene keep things lively.',
-    events: [],
   },
   {
     name: 'Omaha',
@@ -1400,11 +1176,9 @@ const plainsFrontier: City[] = [
     lat: 41.2565,
     lng: -95.9345,
     vibes: ['food', 'city', 'family'],
-    populationTier: 'large',
     bestSeasons: ['spring', 'summer', 'fall'],
     blurb:
       'The Henry Doorly Zoo consistently ranks among the world\'s best, with a desert dome and indoor rainforest under one roof. The Old Market\'s cobblestone streets, Omaha steaks (obviously), and the Joslyn Art Museum make this a Midwest standout.',
-    events: [],
   },
   {
     name: 'Wichita',
@@ -1412,13 +1186,11 @@ const plainsFrontier: City[] = [
     lat: 37.6872,
     lng: -97.3301,
     vibes: ['history', 'family', 'budget'],
-    populationTier: 'large',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'The Air Capital of the World features the Kansas Aviation Museum and the Cosmosphere space center in nearby Hutchinson. The Keeper of the Plains statue stands at the confluence of two rivers, and Old Town\'s nightlife surprises visitors.',
     weatherAdvisory:
       'Tornado season runs March–June — check conditions before a spring visit.',
-    events: [],
   },
   {
     name: 'Oklahoma City',
@@ -1426,13 +1198,11 @@ const plainsFrontier: City[] = [
     lat: 35.4676,
     lng: -97.5164,
     vibes: ['history', 'food', 'city'],
-    populationTier: 'metro',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'The Oklahoma City National Memorial\'s 168 empty chairs are hauntingly powerful, while the Bricktown entertainment district pulses with energy. Stockyards City serves up massive chicken-fried steaks, and the Paseo Arts District adds creative flair.',
     weatherAdvisory:
       'Tornado season peaks in spring — check local weather advisories if visiting March–June.',
-    events: [],
   },
   {
     name: 'Tulsa',
@@ -1440,13 +1210,11 @@ const plainsFrontier: City[] = [
     lat: 36.154,
     lng: -95.9928,
     vibes: ['history', 'food', 'offbeat'],
-    populationTier: 'large',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Art Deco architecture rivals Miami\'s along the Route 66 corridor, and the Philbrook Museum is housed in an Italian Renaissance villa with stunning gardens. The Gathering Place park and the Blue Whale of Catoosa on Route 66 add quirky charm.',
     weatherAdvisory:
       'Tornado season peaks in spring — stay weather-aware if visiting March–June.',
-    events: [],
   },
   {
     name: 'Des Moines',
@@ -1454,11 +1222,9 @@ const plainsFrontier: City[] = [
     lat: 41.5868,
     lng: -93.625,
     vibes: ['food', 'city', 'budget'],
-    populationTier: 'large',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'The Iowa State Fair\'s butter cow and 60+ foods-on-a-stick are legendary, while the East Village and Court Avenue districts buzz year-round. The Pappajohn Sculpture Park and the Des Moines Art Center punch well above this capital city\'s weight.',
-    events: [],
   },
   {
     name: 'Lincoln',
@@ -1466,11 +1232,9 @@ const plainsFrontier: City[] = [
     lat: 40.8136,
     lng: -96.7026,
     vibes: ['history', 'food', 'budget'],
-    populationTier: 'large',
     bestSeasons: ['spring', 'summer', 'fall'],
     blurb:
       'Memorial Stadium transforms into Nebraska\'s third-largest city on Husker game days with a sea of red. The Haymarket District\'s restored warehouses, Sunken Gardens, and the State Capitol\'s towering Sower statue crown this college town.',
-    events: [],
   },
   {
     name: 'Cheyenne',
@@ -1478,11 +1242,9 @@ const plainsFrontier: City[] = [
     lat: 41.14,
     lng: -104.8202,
     vibes: ['history', 'outdoors', 'family'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'Cheyenne Frontier Days, the world\'s largest outdoor rodeo, turns this cowboy capital into a Wild West celebration every July. The historic Union Pacific Depot, Big Boy steam locomotive, and the Wyoming State Museum bring frontier history to life.',
-    events: [],
   },
   {
     name: 'Billings',
@@ -1490,11 +1252,9 @@ const plainsFrontier: City[] = [
     lat: 45.7833,
     lng: -108.5007,
     vibes: ['outdoors', 'history', 'budget'],
-    populationTier: 'medium',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'Montana\'s largest city sits on the Rimrocks with sweeping views of five mountain ranges and easy access to the Little Bighorn Battlefield. Pompeys Pillar bears William Clark\'s carved signature, and the Beartooth Highway to Yellowstone is one of America\'s most scenic drives.',
-    events: [],
   },
 ];
 
@@ -1506,11 +1266,9 @@ const additionalDestinations: City[] = [
     lat: 44.4654,
     lng: -72.6874,
     vibes: ['mountains', 'outdoors', 'family'],
-    populationTier: 'small',
     bestSeasons: ['winter', 'fall'],
     blurb:
       'Vermont\'s ski capital delivers powdery slopes in winter and blazing foliage tunnels in autumn. The Stowe Recreation Path winds past covered bridges, and après-ski at Trapp Family Lodge channels old-world charm.',
-    events: ['Stowe Winter Carnival'],
   },
   {
     name: 'Kennebunkport',
@@ -1518,7 +1276,6 @@ const additionalDestinations: City[] = [
     lat: 43.3615,
     lng: -70.4764,
     vibes: ['beach', 'food', 'family'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'This postcard-perfect Maine harbor town pairs lobster shacks with presidential history. Dock Square\'s boutiques, rocky coastline walks, and some of New England\'s finest clam chowder make it a quintessential seaside escape.',
@@ -1529,7 +1286,6 @@ const additionalDestinations: City[] = [
     lat: 43.6243,
     lng: -72.5185,
     vibes: ['history', 'outdoors', 'family'],
-    populationTier: 'small',
     bestSeasons: ['fall', 'winter'],
     blurb:
       'Often called the prettiest small town in America, Woodstock\'s covered bridge, village green, and Billings Farm create a scene straight out of a Norman Rockwell painting. Fall foliage here is transcendent.',
@@ -1540,11 +1296,9 @@ const additionalDestinations: City[] = [
     lat: 42.6995,
     lng: -74.9247,
     vibes: ['history', 'family', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'Home of the Baseball Hall of Fame, this idyllic village on Otsego Lake draws sports pilgrims and history buffs alike. The Fenimore Art Museum and surrounding farmland add depth beyond the diamond.',
-    events: ['Baseball Hall of Fame Induction Weekend'],
   },
   {
     name: 'Nantucket',
@@ -1552,11 +1306,9 @@ const additionalDestinations: City[] = [
     lat: 41.2835,
     lng: -70.0995,
     vibes: ['beach', 'history', 'food'],
-    populationTier: 'small',
     bestSeasons: ['summer'],
     blurb:
       'This windswept island thirty miles off Cape Cod preserves cobblestone streets, grey-shingled cottages, and a whaling heritage that inspired Moby Dick. Pristine beaches and world-class seafood seal the deal.',
-    events: ['Nantucket Wine & Food Festival', 'Daffodil Festival'],
   },
   {
     name: 'Hudson',
@@ -1564,7 +1316,6 @@ const additionalDestinations: City[] = [
     lat: 42.2528,
     lng: -73.7907,
     vibes: ['food', 'offbeat', 'city'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Once a fading whaling port, Hudson has reinvented itself as the Hudson Valley\'s hippest destination. Warren Street hums with antique shops, farm-to-table restaurants, and art galleries that rival Brooklyn.',
@@ -1576,7 +1327,6 @@ const additionalDestinations: City[] = [
     lat: 37.2668,
     lng: -76.0166,
     vibes: ['beach', 'history', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'This revitalized bayside gem on Virginia\'s Eastern Shore offers sunset beaches facing the Chesapeake Bay, a walkable art-deco downtown, and craft breweries without the Ocean City crowds.',
@@ -1588,7 +1338,6 @@ const additionalDestinations: City[] = [
     lat: 40.8762,
     lng: -75.7324,
     vibes: ['history', 'outdoors', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['fall', 'summer'],
     blurb:
       'Dubbed the "Switzerland of America," this Lehigh Gorge town packs Victorian mansions, whitewater rafting, and a scenic railway into a dramatic mountain setting. Fall foliage from the train is spectacular.',
@@ -1599,7 +1348,6 @@ const additionalDestinations: City[] = [
     lat: 38.7745,
     lng: -75.1394,
     vibes: ['beach', 'history', 'family'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'Delaware\'s "First Town" blends colonial Dutch heritage with laid-back beach vibes. Cape Henlopen State Park offers pristine dunes, and the ferry to Cape May makes a great day-trip loop.',
@@ -1610,7 +1358,6 @@ const additionalDestinations: City[] = [
     lat: 38.1496,
     lng: -79.0717,
     vibes: ['history', 'food', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'This Shenandoah Valley gem boasts one of the best-preserved Victorian downtowns in the country, the American Shakespeare Center, and Woodrow Wilson\'s birthplace. Farm-to-table dining here punches way above its weight.',
@@ -1622,7 +1369,6 @@ const additionalDestinations: City[] = [
     lat: 34.8526,
     lng: -82.394,
     vibes: ['city', 'food', 'outdoors'],
-    populationTier: 'medium',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Greenville\'s stunning Falls Park on the Reedy and the iconic Liberty Bridge anchor a revitalized downtown packed with inventive restaurants and public art. The Blue Ridge foothills are a short drive away.',
@@ -1633,7 +1379,6 @@ const additionalDestinations: City[] = [
     lat: 31.1498,
     lng: -81.3695,
     vibes: ['beach', 'history', 'family'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Spanish moss drapes live oaks along this Georgia barrier island where a historic lighthouse guards the shore. Bike the island\'s flat paths, kayak through salt marshes, and feast on low-country shrimp.',
@@ -1645,7 +1390,6 @@ const additionalDestinations: City[] = [
     lat: 29.7252,
     lng: -84.9835,
     vibes: ['food', 'beach', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'This forgotten Florida panhandle town produces ninety percent of the state\'s oysters. Victorian storefronts, empty barrier-island beaches at St. George Island, and zero chain restaurants make it the anti-Orlando.',
@@ -1657,11 +1401,9 @@ const additionalDestinations: City[] = [
     lat: 38.0406,
     lng: -84.5037,
     vibes: ['food', 'history', 'outdoors'],
-    populationTier: 'large',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'The heart of Bluegrass Country wraps bourbon distilleries, thoroughbred horse farms, and a thriving food scene into one elegant package. Drive the back roads past white-fenced paddocks and stop at a bourbon trail distillery.',
-    events: ['Keeneland Race Meets', 'Festival of the Bluegrass'],
   },
   {
     name: 'Outer Banks',
@@ -1669,12 +1411,10 @@ const additionalDestinations: City[] = [
     lat: 35.5585,
     lng: -75.4665,
     vibes: ['beach', 'history', 'family'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'These windswept barrier islands gave the Wright Brothers their first flight and sheltered Blackbeard the pirate. Wild horses roam Corolla, lighthouses dot the shore, and the surf breaks are legendary.',
     weatherAdvisory: 'Hurricane risk June through November; strong rip currents.',
-    events: ['Outer Banks Seafood Festival'],
   },
   {
     name: 'Dahlonega',
@@ -1682,11 +1422,9 @@ const additionalDestinations: City[] = [
     lat: 34.5328,
     lng: -83.985,
     vibes: ['history', 'outdoors', 'food'],
-    populationTier: 'small',
     bestSeasons: ['fall', 'spring'],
     blurb:
       'Site of America\'s first gold rush, this north Georgia mountain town now draws visitors with tasting rooms along a charming town square and trailheads into the Chattahoochee National Forest. Fall color is extraordinary.',
-    events: ['Gold Rush Days'],
   },
   {
     name: 'Gatlinburg',
@@ -1694,12 +1432,10 @@ const additionalDestinations: City[] = [
     lat: 35.7143,
     lng: -83.5102,
     vibes: ['mountains', 'family', 'outdoors'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'The gateway to Great Smoky Mountains National Park is equal parts mountain kitsch and genuine natural wonder. Ride the aerial tramway to Ober Mountain, then disappear into miles of misty Appalachian trails.',
     weatherAdvisory: 'Wildfire risk during dry autumn conditions.',
-    events: ['Smoky Mountain Winterfest'],
   },
   {
     name: 'Pensacola',
@@ -1707,12 +1443,10 @@ const additionalDestinations: City[] = [
     lat: 30.4213,
     lng: -87.2169,
     vibes: ['beach', 'history', 'nightlife'],
-    populationTier: 'medium',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Sugar-white sand and emerald water rival any Caribbean beach, but Pensacola also delivers a 450-year history, a thriving downtown bar scene, and the Blue Angels roaring overhead from NAS Pensacola.',
     weatherAdvisory: 'Hurricane risk June through November.',
-    events: ['Blue Angels Homecoming Air Show', 'Pensacola Seafood Festival'],
   },
   {
     name: 'Highlands',
@@ -1720,7 +1454,6 @@ const additionalDestinations: City[] = [
     lat: 35.0526,
     lng: -83.1968,
     vibes: ['mountains', 'food', 'outdoors'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'Perched at 4,118 feet on the Blue Ridge Plateau, Highlands offers cool summer escapes, dramatic waterfalls, and a surprisingly refined dining scene. Whiteside Mountain\'s sheer cliffs are among the highest in the East.',
@@ -1732,11 +1465,9 @@ const additionalDestinations: City[] = [
     lat: 31.7607,
     lng: -93.0863,
     vibes: ['history', 'food', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Louisiana\'s oldest settlement enchants with Creole architecture along Cane River Lake, legendary meat pies, and a Christmas Festival of Lights that draws hundreds of thousands. Steel Magnolias was filmed here.',
-    events: ['Natchitoches Christmas Festival of Lights'],
   },
   {
     name: 'South Padre Island',
@@ -1744,7 +1475,6 @@ const additionalDestinations: City[] = [
     lat: 26.1118,
     lng: -97.168,
     vibes: ['beach', 'nightlife', 'family'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'winter'],
     blurb:
       'This subtropical barrier island at Texas\'s southern tip pairs warm Gulf waters with sea turtle rescue centers and some of the state\'s best birding. Spring break brings the party; off-season delivers peaceful sunsets.',
@@ -1756,7 +1486,6 @@ const additionalDestinations: City[] = [
     lat: 34.0293,
     lng: -94.7388,
     vibes: ['outdoors', 'offbeat', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['fall', 'spring'],
     blurb:
       'Hidden in Oklahoma\'s pine-covered Kiamichi Mountains, Broken Bow Lake and Beavers Bend State Park offer kayaking, hiking, and luxury cabin retreats that feel worlds away from the Great Plains.',
@@ -1767,11 +1496,9 @@ const additionalDestinations: City[] = [
     lat: 29.7369,
     lng: -98.1053,
     vibes: ['history', 'nightlife', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Texas\'s oldest dance hall still hosts live music every night in this tiny New Braunfels neighborhood. Tube the Guadalupe River by day, two-step under tin-roof rafters by night, and grab pie at the Gristmill.',
-    events: ['Gruene Music & Wine Fest'],
   },
   {
     name: 'Mountain View',
@@ -1779,11 +1506,9 @@ const additionalDestinations: City[] = [
     lat: 35.8684,
     lng: -92.1174,
     vibes: ['offbeat', 'budget', 'outdoors'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'The Folk Music Capital of the World hosts impromptu jam sessions on the courthouse square every weekend. Blanchard Springs Caverns nearby is one of the most spectacular cave systems in the country.',
-    events: ['Arkansas Folk Festival', 'Ozark Folk Center concerts'],
   },
   // ─── Midwest ───
   {
@@ -1792,11 +1517,9 @@ const additionalDestinations: City[] = [
     lat: 45.8492,
     lng: -84.6189,
     vibes: ['history', 'family', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['summer'],
     blurb:
       'No cars allowed on this Lake Huron island where horse-drawn carriages clip-clop past Victorian cottages and the Grand Hotel\'s legendary porch. Bite into a slab of famous Mackinac fudge and feel time slow to a trot.',
-    events: ['Lilac Festival'],
   },
   {
     name: 'Galena',
@@ -1804,7 +1527,6 @@ const additionalDestinations: City[] = [
     lat: 42.4167,
     lng: -90.4291,
     vibes: ['history', 'food', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['fall', 'summer'],
     blurb:
       'Ulysses S. Grant\'s hometown froze in time with perfectly preserved 1850s brick storefronts climbing a bluff above the Galena River. Tasting rooms, antique shops, and rolling countryside reward a slow weekend.',
@@ -1815,11 +1537,9 @@ const additionalDestinations: City[] = [
     lat: 44.9469,
     lng: -87.3786,
     vibes: ['outdoors', 'food', 'family'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'Wisconsin\'s thumb-shaped peninsula juts into Lake Michigan with cherry orchards, fish boils, lighthouses, and eleven charming villages. Kayak sea caves, catch a sunset from a Door County winery, and slow way down.',
-    events: ['Door County Cherry Festival'],
   },
   {
     name: 'Frankenmuth',
@@ -1827,11 +1547,9 @@ const additionalDestinations: City[] = [
     lat: 43.3314,
     lng: -83.7383,
     vibes: ['family', 'food', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'winter'],
     blurb:
       'Michigan\'s "Little Bavaria" serves legendary all-you-can-eat chicken dinners, runs a year-round Christmas store the size of a football field, and hosts Oktoberfest celebrations that rival the Midwest\'s best.',
-    events: ['Frankenmuth Oktoberfest', 'Zehnder\'s Snowfest'],
   },
   {
     name: 'Bayfield',
@@ -1839,11 +1557,9 @@ const additionalDestinations: City[] = [
     lat: 46.8119,
     lng: -90.8202,
     vibes: ['outdoors', 'offbeat', 'family'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'winter'],
     blurb:
       'This tiny Lake Superior town is the gateway to Apostle Islands National Lakeshore, where sea caves, red cliffs, and pristine beaches feel more Pacific Northwest than Midwest. Winter ice caves are otherworldly.',
-    events: ['Bayfield Apple Festival'],
   },
   {
     name: 'Holland',
@@ -1851,11 +1567,9 @@ const additionalDestinations: City[] = [
     lat: 42.7876,
     lng: -86.1089,
     vibes: ['family', 'offbeat', 'beach'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'summer'],
     blurb:
       'Dutch heritage comes alive each May when millions of tulips bloom and the Tulip Time Festival fills the streets with wooden-shoe dancers. Lake Michigan beaches and a working De Zwaan windmill round out the charm.',
-    events: ['Tulip Time Festival'],
   },
   {
     name: 'Stillwater',
@@ -1863,7 +1577,6 @@ const additionalDestinations: City[] = [
     lat: 45.0564,
     lng: -92.8063,
     vibes: ['history', 'food', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['fall', 'summer'],
     blurb:
       'Minnesota\'s "Birthplace" clings to the bluffs of the St. Croix River with Victorian architecture, independent bookshops, and riverside dining. The historic lift bridge and fall colors make for a postcard-perfect getaway.',
@@ -1875,11 +1588,9 @@ const additionalDestinations: City[] = [
     lat: 44.3767,
     lng: -103.7296,
     vibes: ['history', 'nightlife', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'Wild Bill Hickok and Calamity Jane are buried here in this gold-rush town turned gaming destination. The entire downtown is a National Historic Landmark, and the Black Hills scenery is pure Western drama.',
-    events: ['Days of \'76 Rodeo'],
   },
   {
     name: 'Estes Park',
@@ -1887,11 +1598,9 @@ const additionalDestinations: City[] = [
     lat: 40.3772,
     lng: -105.5217,
     vibes: ['mountains', 'outdoors', 'family'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'The eastern gateway to Rocky Mountain National Park sits at 7,500 feet surrounded by elk-filled meadows and craggy peaks. Trail Ridge Road climbs above treeline for views that steal your breath—literally and figuratively.',
-    events: ['Elk Fest', 'Rooftop Rodeo'],
   },
   {
     name: 'Thermopolis',
@@ -1899,7 +1608,6 @@ const additionalDestinations: City[] = [
     lat: 43.646,
     lng: -108.2121,
     vibes: ['outdoors', 'offbeat', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'spring'],
     blurb:
       'Home to the world\'s largest mineral hot spring, this small Wyoming town offers free public soaking in Hot Springs State Park. Bighorn Canyon and the Wyoming Dinosaur Center add unexpected depth to a relaxing stop.',
@@ -1910,11 +1618,9 @@ const additionalDestinations: City[] = [
     lat: 44.5263,
     lng: -109.0565,
     vibes: ['history', 'outdoors', 'family'],
-    populationTier: 'small',
     bestSeasons: ['summer'],
     blurb:
       'Buffalo Bill\'s town delivers the real West: nightly rodeos all summer, five world-class Western art museums, and the scenic Wapiti Valley road into Yellowstone\'s east entrance through some of the wildest country in the Lower 48.',
-    events: ['Cody Stampede Rodeo'],
   },
   {
     name: 'Leavenworth',
@@ -1922,11 +1628,9 @@ const additionalDestinations: City[] = [
     lat: 47.5962,
     lng: -120.6615,
     vibes: ['mountains', 'family', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['winter', 'fall'],
     blurb:
       'This Bavarian-themed village in the Cascades transforms into a twinkling winter wonderland each December. Summer brings river tubing, Oktoberfest fills the Festhalle, and the surrounding Alpine Lakes Wilderness is world-class.',
-    events: ['Leavenworth Christmas Lighting Festival', 'Oktoberfest'],
   },
   // ─── Mountain West & Rockies ───
   {
@@ -1935,11 +1639,9 @@ const additionalDestinations: City[] = [
     lat: 40.485,
     lng: -106.8317,
     vibes: ['mountains', 'outdoors', 'family'],
-    populationTier: 'small',
     bestSeasons: ['winter', 'summer'],
     blurb:
       'Champagne powder and a genuine ranching heritage set Steamboat apart from glitzier Colorado ski towns. Soak in Strawberry Park Hot Springs under the stars, then explore the Yampa River Core Trail in summer.',
-    events: ['Steamboat Winter Carnival'],
   },
   {
     name: 'Crested Butte',
@@ -1947,11 +1649,9 @@ const additionalDestinations: City[] = [
     lat: 38.8697,
     lng: -106.9878,
     vibes: ['mountains', 'outdoors', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['winter', 'summer'],
     blurb:
       'The "Last Great Colorado Ski Town" rewards the extra drive with legendary extreme terrain in winter and wildflower-carpeted alpine meadows in summer. Elk Avenue\'s painted Victorian buildings ooze mountain-town authenticity.',
-    events: ['Crested Butte Wildflower Festival'],
   },
   {
     name: 'Sandpoint',
@@ -1959,7 +1659,6 @@ const additionalDestinations: City[] = [
     lat: 48.2766,
     lng: -116.5533,
     vibes: ['mountains', 'outdoors', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'winter'],
     blurb:
       'Lake Pend Oreille shimmers beneath the Selkirk and Cabinet ranges in this laid-back northern Idaho town. Schweitzer Mountain Resort delivers uncrowded skiing, while summer means lake days and the Long Bridge swim.',
@@ -1970,7 +1669,6 @@ const additionalDestinations: City[] = [
     lat: 44.2072,
     lng: -114.9383,
     vibes: ['mountains', 'outdoors', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['summer'],
     blurb:
       'Population sixty-three but surrounded by the Sawtooth, White Cloud, and Boulder ranges—some say this is the most scenic small town in America. Redfish Lake alone justifies the remote drive.',
@@ -1981,7 +1679,6 @@ const additionalDestinations: City[] = [
     lat: 44.6621,
     lng: -111.1041,
     vibes: ['outdoors', 'family', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'winter'],
     blurb:
       'The western gateway to Yellowstone National Park trades on proximity to geysers, bison herds, and backcountry trails. Winter brings world-class snowmobiling and cross-country skiing through geyser basins.',
@@ -1992,7 +1689,6 @@ const additionalDestinations: City[] = [
     lat: 45.1858,
     lng: -109.2468,
     vibes: ['mountains', 'outdoors', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'winter'],
     blurb:
       'This former coal town at the foot of the Beartooth Mountains is the starting point for the breathtaking Beartooth Highway. Ski Red Lodge Mountain without the lift lines, and find genuine Montana hospitality on Broadway.',
@@ -2004,7 +1700,6 @@ const additionalDestinations: City[] = [
     lat: 37.1889,
     lng: -112.9983,
     vibes: ['outdoors', 'mountains', 'family'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'The gateway to Zion National Park sits beneath towering red sandstone walls. After hiking Angels Landing or the Narrows, refuel at surprisingly sophisticated restaurants and watch the canyon glow at sunset.',
@@ -2016,7 +1711,6 @@ const additionalDestinations: City[] = [
     lat: 37.0475,
     lng: -112.5263,
     vibes: ['outdoors', 'offbeat', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Dubbed "Little Hollywood" for its Western film heritage, Kanab is the basecamp for the Wave, Buckskin Gulch, and three national parks. Best Friends Animal Sanctuary adds a heartwarming side trip.',
@@ -2027,11 +1721,9 @@ const additionalDestinations: City[] = [
     lat: 34.54,
     lng: -112.4685,
     vibes: ['history', 'outdoors', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Arizona\'s original territorial capital trades desert heat for pine-forested highlands and Whiskey Row\'s raucous saloon history. The courthouse square hosts one of the country\'s oldest rodeos every Fourth of July.',
-    events: ['World\'s Oldest Rodeo'],
   },
   {
     name: 'Bisbee',
@@ -2039,7 +1731,6 @@ const additionalDestinations: City[] = [
     lat: 31.4482,
     lng: -109.9284,
     vibes: ['offbeat', 'history', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall', 'winter'],
     blurb:
       'This former copper-mining boomtown reinvented itself as an artists\' colony tucked into the Mule Mountains. Winding staircases connect colorful hillside galleries, and the Lavender Pit mine tour is jaw-dropping.',
@@ -2050,7 +1741,6 @@ const additionalDestinations: City[] = [
     lat: 32.7701,
     lng: -108.2803,
     vibes: ['offbeat', 'outdoors', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'A thriving arts community in southwestern New Mexico serves as the gateway to the Gila Cliff Dwellings and one of the largest wilderness areas in the country. Hot springs dot the surrounding Gila National Forest.',
@@ -2061,7 +1751,6 @@ const additionalDestinations: City[] = [
     lat: 32.3199,
     lng: -106.7637,
     vibes: ['food', 'outdoors', 'budget'],
-    populationTier: 'medium',
     bestSeasons: ['spring', 'fall', 'winter'],
     blurb:
       'The Organ Mountains rise like a cathedral behind New Mexico\'s second city, where green-chile culture reigns supreme. White Sands National Park is a short drive, and the Mesilla Plaza preserves Old West charm.',
@@ -2073,7 +1762,6 @@ const additionalDestinations: City[] = [
     lat: 34.7489,
     lng: -112.1138,
     vibes: ['offbeat', 'history', 'food'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Clinging to the side of Mingus Mountain, this former ghost town is now a quirky artists\' enclave with tasting rooms, haunted hotels, and Verde Valley views that stretch forever. The winding road up is half the fun.',
@@ -2085,7 +1773,6 @@ const additionalDestinations: City[] = [
     lat: 46.1879,
     lng: -123.8313,
     vibes: ['history', 'food', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'Where the Columbia meets the Pacific, this Victorian seaport inspired The Goonies and houses a remarkable maritime museum. Climb the Astoria Column for panoramic views, then warm up with craft beer and fresh-caught fish.',
@@ -2096,7 +1783,6 @@ const additionalDestinations: City[] = [
     lat: 45.7054,
     lng: -121.5215,
     vibes: ['outdoors', 'food', 'mountains'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'The windsurfing capital of the world sits in the Columbia River Gorge with Mount Hood looming above. Fruit Loop drives through orchard country, craft cideries, and waterfall hikes make every direction rewarding.',
@@ -2107,7 +1793,6 @@ const additionalDestinations: City[] = [
     lat: 45.8918,
     lng: -123.9615,
     vibes: ['beach', 'outdoors', 'family'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'Haystack Rock rises 235 feet from the surf in one of Oregon\'s most iconic beach scenes. Tidepools teem with sea stars, the village gallery scene is top-notch, and Ecola State Park trails offer dramatic coastal panoramas.',
@@ -2118,7 +1803,6 @@ const additionalDestinations: City[] = [
     lat: 39.3077,
     lng: -123.7995,
     vibes: ['offbeat', 'outdoors', 'food'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'This cliffside Victorian village on California\'s dramatic north coast feels more New England than NorCal. Whale watching, redwood forests, and a thriving local food scene make it a restorative coastal escape.',
@@ -2129,11 +1813,9 @@ const additionalDestinations: City[] = [
     lat: 35.6264,
     lng: -120.691,
     vibes: ['food', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'California\'s hottest wine region specializes in bold Rhône-style blends and Zinfandels. A revitalized downtown square mixes tasting rooms with farm-to-table dining, all without Napa\'s crowds or prices.',
-    events: ['Paso Robles Wine Festival'],
   },
   {
     name: 'Solvang',
@@ -2141,11 +1823,9 @@ const additionalDestinations: City[] = [
     lat: 34.5958,
     lng: -120.1376,
     vibes: ['food', 'family', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'A Danish village in the Santa Ynez Valley complete with windmills, aebleskiver stands, and half-timbered bakeries. Nearby vineyards made famous by Sideways add world-class Pinot Noir tasting to the storybook charm.',
-    events: ['Solvang Danish Days'],
   },
   {
     name: 'Walla Walla',
@@ -2153,11 +1833,9 @@ const additionalDestinations: City[] = [
     lat: 46.0646,
     lng: -118.3430,
     vibes: ['food', 'offbeat', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'summer', 'fall'],
     blurb:
       'Once known only for sweet onions, Walla Walla now rivals Napa with over 120 wineries and a farm-driven culinary scene set against golden wheat fields and the Blue Mountains. Wine country without the attitude.',
-    events: ['Walla Walla Sweet Onion Festival'],
   },
   {
     name: 'San Luis Obispo',
@@ -2165,11 +1843,9 @@ const additionalDestinations: City[] = [
     lat: 35.2828,
     lng: -120.6596,
     vibes: ['food', 'outdoors', 'city'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Consistently ranked among the happiest cities in America, SLO\'s Thursday farmers\' market shuts down the main street for live music and tri-tip barbecue. Nearby Montana de Oro State Park hides wild coastal bluffs.',
-    events: ['SLO Thursday Night Farmers Market'],
   },
   {
     name: 'Lassen Volcanic National Park Area',
@@ -2177,7 +1853,6 @@ const additionalDestinations: City[] = [
     lat: 40.4977,
     lng: -121.4207,
     vibes: ['outdoors', 'offbeat', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['summer'],
     blurb:
       'One of the least-visited national parks in the Lower 48 packs boiling mudpots, fumaroles, pristine lakes, and volcanic peaks into a compact wonderland. Bumpass Hell trail is like walking on another planet.',
@@ -2188,7 +1863,6 @@ const additionalDestinations: City[] = [
     lat: 45.3546,
     lng: -117.2296,
     vibes: ['mountains', 'outdoors', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'This remote bronze-sculpting town at the foot of the Wallowa Mountains—Oregon\'s "Little Switzerland"—offers Wallowa Lake, the Eagle Cap Wilderness, and a surprisingly vibrant arts scene in splendid isolation.',
@@ -2199,7 +1873,6 @@ const additionalDestinations: City[] = [
     lat: 48.2127,
     lng: -122.6818,
     vibes: ['outdoors', 'family', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'The longest island in Puget Sound rewards with Deception Pass State Park\'s dramatic bridge, Ebey\'s Landing prairie bluffs, lavender farms, and Penn Cove mussels that chefs across the region covet.',
@@ -2211,12 +1884,10 @@ const additionalDestinations: City[] = [
     lat: 29.3227,
     lng: -103.6166,
     vibes: ['offbeat', 'outdoors', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['fall', 'winter', 'spring'],
     blurb:
       'A ghost town on the edge of Big Bend National Park where porch music, chili cook-offs, and Chisos Mountain sunsets create a desert culture found nowhere else. The Starlight Theatre restaurant is worth the long drive alone.',
     weatherAdvisory: 'Extreme heat in summer; temperatures regularly exceed 110°F.',
-    events: ['Terlingua International Chili Championship'],
   },
   {
     name: 'Wimberley',
@@ -2224,7 +1895,6 @@ const additionalDestinations: City[] = [
     lat: 29.9977,
     lng: -98.0989,
     vibes: ['offbeat', 'outdoors', 'family'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'This Hill Country artists\' village sits where Cypress Creek meets the Blanco River, creating Jacob\'s Well—a mesmerizing blue spring plunging 140 feet into the earth. Weekend markets and swimming holes define the vibe.',
@@ -2236,7 +1906,6 @@ const additionalDestinations: City[] = [
     lat: 27.8339,
     lng: -97.0611,
     vibes: ['beach', 'family', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'This laid-back Mustang Island beach town runs on flip-flops, fresh Gulf seafood, and world-class fishing. Take the free ferry, watch dolphins from the jetties, and find miles of uncrowded sand.',
@@ -2248,7 +1917,6 @@ const additionalDestinations: City[] = [
     lat: 34.7273,
     lng: -98.4848,
     vibes: ['outdoors', 'offbeat', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Oklahoma\'s original resort town sits at the foot of the Wichita Mountains Wildlife Refuge, where bison roam free and Bath Lake invites a cobblestone-village dip. Granite peaks and prairie meet in unexpected beauty.',
@@ -2261,7 +1929,6 @@ const additionalDestinations: City[] = [
     lat: 40.8021,
     lng: -124.1637,
     vibes: ['offbeat', 'outdoors', 'history'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'This Victorian seaport on Humboldt Bay is the gateway to the world\'s tallest trees in Redwood National Park. The ornate Carson Mansion anchors Old Town, and the bay\'s oyster bars are a hidden gem.',
@@ -2272,7 +1939,6 @@ const additionalDestinations: City[] = [
     lat: 35.5641,
     lng: -121.0808,
     vibes: ['beach', 'outdoors', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Nestled between Big Sur and Hearst Castle on the Central Coast, Cambria pairs Monterey pine forests with a rocky moonstone beach. Elephant seals at nearby Piedras Blancas put on one of nature\'s great free shows.',
@@ -2283,7 +1949,6 @@ const additionalDestinations: City[] = [
     lat: 37.3636,
     lng: -118.3951,
     vibes: ['mountains', 'outdoors', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'The Eastern Sierra\'s basecamp sits between the White Mountains and the Sierra Nevada, offering world-class bouldering at the Buttermilks, hot springs, and ancient bristlecone pines—the oldest living things on Earth.',
@@ -2295,7 +1960,6 @@ const additionalDestinations: City[] = [
     lat: 34.448,
     lng: -119.2429,
     vibes: ['food', 'offbeat', 'outdoors'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Tucked in a sun-drenched valley behind the Topa Topa Mountains, Ojai radiates a spiritual, artistic energy. The "Pink Moment" sunset glow on the mountains, olive oil tastings, and Meditation Mount draw seekers of all kinds.',
@@ -2306,7 +1970,6 @@ const additionalDestinations: City[] = [
     lat: 37.6485,
     lng: -118.9721,
     vibes: ['mountains', 'outdoors', 'family'],
-    populationTier: 'small',
     bestSeasons: ['winter', 'summer'],
     blurb:
       'California\'s premier ski resort area transforms into a high-altitude summer playground with hiking to Devils Postpile, mountain biking, and hot creek soaking. Mammoth Mountain regularly logs the state\'s deepest snowpack.',
@@ -2319,11 +1982,9 @@ const additionalDestinations: City[] = [
     lat: 36.7098,
     lng: -81.9773,
     vibes: ['history', 'outdoors', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Virginia\'s oldest town west of the Blue Ridge anchors the Virginia Creeper Trail, a 34-mile bike ride through some of Appalachia\'s most beautiful scenery. The Barter Theatre has staged shows since the Depression.',
-    events: ['Virginia Highlands Festival'],
   },
   {
     name: 'Brevard',
@@ -2331,11 +1992,9 @@ const additionalDestinations: City[] = [
     lat: 35.2334,
     lng: -82.7343,
     vibes: ['outdoors', 'offbeat', 'family'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'The "Land of Waterfalls" delivers over 250 cascades in the surrounding Pisgah National Forest. White squirrels roam downtown, and the Brevard Music Center fills summer evenings with world-class performances.',
-    events: ['Brevard Music Festival', 'White Squirrel Festival'],
   },
   {
     name: 'Blowing Rock',
@@ -2343,7 +2002,6 @@ const additionalDestinations: City[] = [
     lat: 36.1351,
     lng: -81.6776,
     vibes: ['mountains', 'family', 'food'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'This Blue Ridge Parkway village perches at 4,000 feet with panoramic mountain views, a walkable Main Street, and the park namesake—a cliff where snow appears to blow upward. Cool summers have drawn visitors since the 1880s.',
@@ -2354,11 +2012,9 @@ const additionalDestinations: City[] = [
     lat: 34.7029,
     lng: -83.7277,
     vibes: ['family', 'outdoors', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['fall', 'summer'],
     blurb:
       'A Bavarian-themed village in the north Georgia mountains where you can tube the Chattahoochee River, hike to Anna Ruby Falls, and sip German beer in a biergarten. Fall foliage here rivals New England\'s.',
-    events: ['Helen Oktoberfest'],
   },
   {
     name: 'Beaufort',
@@ -2366,7 +2022,6 @@ const additionalDestinations: City[] = [
     lat: 34.7182,
     lng: -76.664,
     vibes: ['beach', 'history', 'food'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'North Carolina\'s third-oldest town sits on Taylor Creek where wild horses roam Carrot Island across the water. The maritime museum, waterfront boardwalk, and ferry to Cape Lookout make this a Crystal Coast gem.',
@@ -2379,7 +2034,6 @@ const additionalDestinations: City[] = [
     lat: 46.5436,
     lng: -87.3954,
     vibes: ['outdoors', 'offbeat', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'The Upper Peninsula\'s largest city sits on Lake Superior with sandstone cliffs, craft breweries, and Pictured Rocks National Lakeshore a short drive east. Northern lights viewing is a real possibility here.',
@@ -2390,7 +2044,6 @@ const additionalDestinations: City[] = [
     lat: 45.1283,
     lng: -87.2468,
     vibes: ['outdoors', 'food', 'family'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'The heart of Door County\'s peninsula village scene, Fish Creek anchors Peninsula State Park and its iconic Eagle Bluff lighthouse. Traditional fish boils, cherry picking, and sunset kayaking define the Wisconsin good life.',
@@ -2401,7 +2054,6 @@ const additionalDestinations: City[] = [
     lat: 47.7508,
     lng: -90.3343,
     vibes: ['outdoors', 'offbeat', 'food'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'This art colony on Lake Superior\'s North Shore is the terminus of the Gunflint Trail into the Boundary Waters. Artists\' studios, a harbor full of fishing boats, and access to pristine wilderness make it the North Shore\'s crown jewel.',
@@ -2412,11 +2064,9 @@ const additionalDestinations: City[] = [
     lat: 41.6528,
     lng: -82.8191,
     vibes: ['nightlife', 'history', 'family'],
-    populationTier: 'small',
     bestSeasons: ['summer'],
     blurb:
       'Lake Erie\'s party island packs Perry\'s Victory monument, golf-cart transportation, and a surprisingly wild bar scene into tiny South Bass Island. Catch the Miller Ferry from the mainland and leave your car behind.',
-    events: ['Christmas in July'],
   },
   // ─── Mountain & Desert ───
   {
@@ -2425,7 +2075,6 @@ const additionalDestinations: City[] = [
     lat: 39.4283,
     lng: -105.1091,
     vibes: ['outdoors', 'mountains', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'This quiet foothills hamlet south of Denver is the gateway to stunning Waterton Canyon and the start of the 486-mile Colorado Trail. Red rocks, mule deer, and bighorn sheep greet hikers minutes from the metro.',
@@ -2436,7 +2085,6 @@ const additionalDestinations: City[] = [
     lat: 38.3005,
     lng: -111.4196,
     vibes: ['outdoors', 'offbeat', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'A tiny oasis at the doorstep of Capitol Reef National Park, where you can pick free fruit in the park\'s historic orchards and drive Cathedral Valley\'s otherworldly monoliths in solitude.',
@@ -2448,7 +2096,6 @@ const additionalDestinations: City[] = [
     lat: 38.0228,
     lng: -107.6714,
     vibes: ['mountains', 'outdoors', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'winter'],
     blurb:
       'The "Switzerland of America" sits in a box canyon surrounded by 13,000-foot peaks, with natural hot springs, the Million Dollar Highway, and the world\'s only city-operated ice climbing park in winter.',
@@ -2459,7 +2106,6 @@ const additionalDestinations: City[] = [
     lat: 33.1284,
     lng: -107.2528,
     vibes: ['offbeat', 'budget', 'outdoors'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall', 'winter'],
     blurb:
       'Renamed after a 1950s game show, this quirky desert town along the Rio Grande hides natural hot springs, Elephant Butte Lake, and a growing arts scene. Spaceport America is just down the road.',
@@ -2470,7 +2116,6 @@ const additionalDestinations: City[] = [
     lat: 48.7596,
     lng: -113.787,
     vibes: ['mountains', 'outdoors'],
-    populationTier: 'small',
     bestSeasons: ['summer'],
     blurb:
       'Going-to-the-Sun Road is the most spectacular drive in North America, weaving past glacial lakes, wildflower meadows, and mountain goats in the Crown of the Continent. Visit while the glaciers remain.',
@@ -2482,7 +2127,6 @@ const additionalDestinations: City[] = [
     lat: 43.7244,
     lng: -111.1113,
     vibes: ['mountains', 'outdoors', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['winter', 'summer'],
     blurb:
       'On the quiet western slope of the Tetons, Driggs offers Grand Targhee Resort\'s legendary powder skiing and summer hiking with Teton views that rival Jackson\'s—at a fraction of the price and pretension.',
@@ -2494,7 +2138,6 @@ const additionalDestinations: City[] = [
     lat: 35.1146,
     lng: -75.981,
     vibes: ['beach', 'offbeat', 'history'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'Reachable only by ferry, this Outer Banks island preserves a Hatteras-dialect accent, Blackbeard\'s final anchorage, and some of the most pristine beaches on the Atlantic seaboard. No stoplights, no chains, no hurry.',
@@ -2506,7 +2149,6 @@ const additionalDestinations: City[] = [
     lat: 33.5604,
     lng: -81.7196,
     vibes: ['history', 'outdoors', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'This elegant equestrian town in South Carolina\'s Thoroughbred Country has hosted polo matches and steeplechases since the Gilded Age. Live oaks canopy the unpaved roads of the historic district, and Hitchcock Woods is one of the largest urban forests in the nation.',
@@ -2517,7 +2159,6 @@ const additionalDestinations: City[] = [
     lat: 30.6699,
     lng: -81.4448,
     vibes: ['beach', 'history', 'family'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'This barrier island near Jacksonville has flown eight flags over its history and still feels wonderfully undeveloped. Fort Clinch State Park, a charming downtown, and thirteen miles of beach create a refined coastal getaway.',
@@ -2529,7 +2170,6 @@ const additionalDestinations: City[] = [
     lat: 32.0006,
     lng: -80.8457,
     vibes: ['beach', 'family', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'summer'],
     blurb:
       'Savannah\'s funky beach town is a twenty-minute drive from the Historic District and worlds apart in vibe. A working lighthouse, dolphin tours, and laid-back seafood joints give it an old-Florida feel on Georgia\'s coast.',
@@ -2542,7 +2182,6 @@ const additionalDestinations: City[] = [
     lat: 42.0409,
     lng: -74.1182,
     vibes: ['offbeat', 'food', 'outdoors'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'The real Woodstock (the 1969 festival was actually nearby) has been an artists\' colony since 1902. Tinker Street\'s eclectic shops, Overlook Mountain hikes, and a thriving live music scene keep the spirit alive.',
@@ -2553,7 +2192,6 @@ const additionalDestinations: City[] = [
     lat: 36.4072,
     lng: -105.573,
     vibes: ['history', 'offbeat', 'outdoors'],
-    populationTier: 'small',
     bestSeasons: ['fall', 'winter'],
     blurb:
       'A UNESCO World Heritage Site continuously inhabited for over 1,000 years, the Pueblo sits beneath the Sangre de Cristo peaks. Combine a respectful visit with world-class skiing at Taos Ski Valley and the earthship community.',
@@ -2564,7 +2202,6 @@ const additionalDestinations: City[] = [
     lat: 35.2245,
     lng: -88.2493,
     vibes: ['history', 'outdoors', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'This quiet Tennessee River town is the gateway to Shiloh National Military Park, one of the Civil War\'s most significant battlefields. The riverside setting and nearby Pickwick Lake add peaceful recreation.',
@@ -2575,7 +2212,6 @@ const additionalDestinations: City[] = [
     lat: 47.4741,
     lng: -115.928,
     vibes: ['history', 'offbeat', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'The entire downtown is on the National Register of Historic Places, and a manhole cover marks the self-proclaimed "Center of the Universe." Silver-mining heritage, the Route of the Hiawatha bike trail, and zero pretension.',
@@ -2586,7 +2222,6 @@ const additionalDestinations: City[] = [
     lat: 35.0242,
     lng: -110.6974,
     vibes: ['offbeat', 'history', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Stand on a corner in Winslow, Arizona, at the Eagles-tribute park on Route 66, then discover the La Posada—one of the great railroad hotels. Meteor Crater and the Painted Desert are short detours away.',
@@ -2597,7 +2232,6 @@ const additionalDestinations: City[] = [
     lat: 42.6556,
     lng: -86.2006,
     vibes: ['beach', 'offbeat', 'food'],
-    populationTier: 'small',
     bestSeasons: ['summer'],
     blurb:
       'The "Art Coast of Michigan" pairs towering Lake Michigan dunes with a vibrant gallery scene and an inclusive, welcoming community. Climb the dunes at Oval Beach, paddle the Kalamazoo River, and browse Butler Street\'s shops.',
@@ -2608,7 +2242,6 @@ const additionalDestinations: City[] = [
     lat: 33.786,
     lng: -89.0278,
     vibes: ['history', 'outdoors', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'This 444-mile scenic drive from Nashville to Natchez follows an ancient trail through deep Southern forests past Emerald Mound, Civil War battlefields, and some of the most peaceful driving in America.',
@@ -2619,7 +2252,6 @@ const additionalDestinations: City[] = [
     lat: 47.9033,
     lng: -91.8671,
     vibes: ['outdoors', 'offbeat', 'budget'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'winter'],
     blurb:
       'The canoe capital of the world sits at the edge of the Boundary Waters Canoe Area Wilderness. Paddle crystal-clear lakes by day, listen to wolves howl at night, and visit the International Wolf Center between trips.',
@@ -2630,11 +2262,9 @@ const additionalDestinations: City[] = [
     lat: 45.318,
     lng: -85.2584,
     vibes: ['beach', 'family', 'food'],
-    populationTier: 'small',
     bestSeasons: ['summer'],
     blurb:
       'Sitting between Lake Michigan, Lake Charlevoix, and Round Lake, this triple-lake town charms with mushroom-cap "Hobbit houses," a beautiful harbor, and some of the best sunsets in the Great Lakes region.',
-    events: ['Charlevoix Venetian Festival'],
   },
   {
     name: 'Fredericksburg',
@@ -2642,7 +2272,6 @@ const additionalDestinations: City[] = [
     lat: 38.3032,
     lng: -77.4605,
     vibes: ['history', 'food', 'family'],
-    populationTier: 'medium',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Four major Civil War battlefields surround this charming colonial town on the Rappahannock River. George Washington grew up nearby, and the revitalized downtown now hums with craft breweries and independent restaurants.',
@@ -2653,7 +2282,6 @@ const additionalDestinations: City[] = [
     lat: 36.4175,
     lng: -121.7327,
     vibes: ['food', 'outdoors', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['spring', 'fall'],
     blurb:
       'Just inland from Carmel-by-the-Sea, this sun-drenched valley hides world-class wineries, horseback riding through golden hills, and farm-to-fork dining without the coastal fog. Bernardus Lodge alone is worth a pilgrimage.',
@@ -2664,11 +2292,9 @@ const additionalDestinations: City[] = [
     lat: 39.7084,
     lng: -91.3585,
     vibes: ['history', 'family', 'offbeat'],
-    populationTier: 'small',
     bestSeasons: ['summer', 'fall'],
     blurb:
       'Mark Twain\'s boyhood home on the Mississippi River brings Tom Sawyer and Huck Finn to life. Explore the cave that inspired the novels, ride a riverboat, and whitewash a fence on National Tom Sawyer Day.',
-    events: ['National Tom Sawyer Days'],
   },
 ];
 

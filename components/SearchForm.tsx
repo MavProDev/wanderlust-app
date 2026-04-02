@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import type { SearchParams, VibeTag } from '@/lib/types';
 import { VIBES } from '@/data/vibes';
+import { getDistanceLabel } from '@/lib/shareUtils';
 import VibeChip from './VibeChip';
 import CityAutocomplete from './CityAutocomplete';
 
@@ -11,14 +12,6 @@ interface SearchFormProps {
   onSurpriseMe: () => SearchParams;
   cityError: string | null;
   initialParams: SearchParams | null;
-}
-
-function getDistanceLabel(miles: number): string {
-  if (miles <= 150) return 'Day Trip';
-  if (miles <= 400) return 'Weekend Drive';
-  if (miles <= 800) return 'Road Trip';
-  if (miles <= 1500) return 'Cross Country';
-  return 'Fly Me Out';
 }
 
 type TripLength = 'day' | 'weekend' | '3-5days' | 'week';
@@ -77,6 +70,7 @@ export default function SearchForm({ onSearch, onSurpriseMe, cityError, initialP
     setMode(params.mode);
     setTripLength(params.tripLength);
     setSelectedVibes(params.vibes);
+    setKeywords('');
 
     if (homeCity.trim()) {
       params.homeCity = homeCity;
@@ -177,6 +171,16 @@ export default function SearchForm({ onSearch, onSurpriseMe, cityError, initialP
               {'\u2708\uFE0F'} Fly
             </button>
           </div>
+          {mode === 'drive' && maxDistance > 800 && (
+            <p className="text-xs text-coral mt-1">
+              Drive mode caps at 800 mi — switch to Fly for longer distances
+            </p>
+          )}
+          {mode === 'fly' && maxDistance < 200 && (
+            <p className="text-xs text-coral mt-1">
+              Fly mode requires 200+ mi — switch to Drive for shorter trips
+            </p>
+          )}
         </div>
 
         {/* Trip length */}
@@ -184,11 +188,13 @@ export default function SearchForm({ onSearch, onSurpriseMe, cityError, initialP
           <span className="block text-sm font-medium mb-1 text-charcoal">
             Trip length
           </span>
-          <div className="flex flex-wrap gap-2">
+          <div role="radiogroup" aria-label="Trip length" className="flex flex-wrap gap-2">
             {TRIP_LENGTHS.map((tl) => (
               <button
                 key={tl.id}
                 type="button"
+                role="radio"
+                aria-checked={tripLength === tl.id}
                 onClick={() => setTripLength(tl.id)}
                 className={`focus-ring flex-1 min-w-[4.5rem] py-2 rounded-lg text-sm font-medium transition-colors ${
                   tripLength === tl.id

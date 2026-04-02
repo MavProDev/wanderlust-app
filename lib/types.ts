@@ -20,11 +20,9 @@ export interface City {
   lat: number;
   lng: number;
   vibes: VibeTag[];
-  populationTier: 'small' | 'medium' | 'large' | 'metro';
   bestSeasons: Season[];
   blurb: string;
   weatherAdvisory?: string;
-  events?: string[];
 }
 
 export interface SearchParams {

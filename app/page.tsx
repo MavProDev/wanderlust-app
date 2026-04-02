@@ -36,7 +36,8 @@ function decodeHashState(): SearchParams | null {
     const mode = params.get('m');
     const tripLength = params.get('t');
     if (!homeCity || !maxDistance || !mode || !tripLength) return null;
-    const vibes = (params.get('v')?.split(',').filter(Boolean) ?? []) as VibeTag[];
+    const validVibeIds = new Set(VIBES.map((v) => v.id));
+    const vibes = (params.get('v')?.split(',').filter((v) => validVibeIds.has(v as VibeTag)) ?? []) as VibeTag[];
     return {
       homeCity,
       maxDistance: Number(maxDistance),
@@ -131,10 +132,6 @@ export default function Home() {
     }
   }, [executeSearch]);
 
-  const handleSearch = (params: SearchParams, isRandomSurprise = false) => {
-    executeSearch(params, isRandomSurprise);
-  };
-
   const handleSurpriseMe = () => {
     const distances = [300, 500, 800, 1200, 2000];
     const modes: ('drive' | 'fly')[] = ['drive', 'fly'];
@@ -176,7 +173,7 @@ export default function Home() {
       {/* Main content */}
       <main id="main-content" className="max-w-[1200px] mx-auto px-4 pb-8">
         <SearchForm
-          onSearch={handleSearch}
+          onSearch={executeSearch}
           onSurpriseMe={handleSurpriseMe}
           cityError={cityError}
           initialParams={initialParams}

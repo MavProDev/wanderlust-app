@@ -58,9 +58,9 @@ export default function DestinationCard({ city, index }: DestinationCardProps) {
           <h3 className="font-display font-bold text-xl text-charcoal">
             {city.name}
           </h3>
-          {matchingVibes.length > 0 && (
+          {city.score > 0 && (
             <span className="text-xs font-medium text-terracotta">
-              {matchingVibes.length}/{VIBES.length} vibes
+              Score: {city.score}
             </span>
           )}
         </div>

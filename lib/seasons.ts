@@ -8,11 +8,20 @@ export function getCurrentSeason(): Season {
   return 'winter';
 }
 
+const SEASON_ORDER: Season[] = ['spring', 'summer', 'fall', 'winter'];
+
 export function getWeatherHint(city: City): string {
   const current = getCurrentSeason();
   if (city.bestSeasons.includes(current)) {
     return '☀️ Great time to visit!';
   }
-  const nextGood = city.bestSeasons[0];
-  return `Best in ${nextGood}`;
+  // Find the chronologically next best season from now
+  const currentIdx = SEASON_ORDER.indexOf(current);
+  for (let i = 1; i <= 4; i++) {
+    const nextSeason = SEASON_ORDER[(currentIdx + i) % 4];
+    if (city.bestSeasons.includes(nextSeason)) {
+      return `Best in ${nextSeason}`;
+    }
+  }
+  return `Best in ${city.bestSeasons[0]}`;
 }

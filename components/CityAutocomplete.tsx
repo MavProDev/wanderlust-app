@@ -89,7 +89,7 @@ export default function CityAutocomplete({
       .filter((city) => city.toLowerCase().includes(lower))
       .slice(0, 8);
     setSuggestions(matches);
-    setIsOpen(matches.length > 0);
+    setIsOpen(true);
     setHighlightIndex(-1);
   };
 
@@ -157,31 +157,37 @@ export default function CityAutocomplete({
       {error && (
         <p className="text-sm mt-1 text-coral" role="alert">{error}</p>
       )}
-      {isOpen && suggestions.length > 0 && (
+      {isOpen && (
         <ul
           id={listboxId}
           role="listbox"
           className="autocomplete-dropdown absolute z-10 w-full mt-1 bg-cream border border-sage/20 rounded-lg shadow-lg max-h-60 overflow-auto"
         >
-          {suggestions.map((city, index) => (
-            <li
-              key={city}
-              id={`${listboxId}-option-${index}`}
-              role="option"
-              aria-selected={index === highlightIndex}
-              onClick={() => selectCity(city)}
-              className={`
-                px-4 py-2 cursor-pointer text-sm text-charcoal
-                ${
-                  index === highlightIndex
-                    ? 'bg-terracotta/10'
-                    : 'hover:bg-sage/10'
-                }
-              `}
-            >
-              {city}
+          {suggestions.length > 0 ? (
+            suggestions.map((city, index) => (
+              <li
+                key={city}
+                id={`${listboxId}-option-${index}`}
+                role="option"
+                aria-selected={index === highlightIndex}
+                onClick={() => selectCity(city)}
+                className={`
+                  px-4 py-2 cursor-pointer text-sm text-charcoal
+                  ${
+                    index === highlightIndex
+                      ? 'bg-terracotta/10'
+                      : 'hover:bg-sage/10'
+                  }
+                `}
+              >
+                {city}
+              </li>
+            ))
+          ) : (
+            <li className="px-4 py-2 text-sm text-charcoal/70 italic">
+              No cities found — try &apos;City, State&apos; format
             </li>
-          ))}
+          )}
         </ul>
       )}
     </div>

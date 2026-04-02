@@ -1,5 +1,6 @@
 import type { ScoredCity } from '@/lib/types';
 import { VIBES } from '@/data/vibes';
+import { getFirstSentence } from '@/lib/shareUtils';
 
 const CARD_WIDTH = 1200;
 const CARD_HEIGHT = 630;
@@ -159,7 +160,7 @@ export function generateShareCard(
   ctx.fillText(city.weatherHint, 60, 260);
 
   // Blurb (first sentence, wrapped)
-  const firstSentence = city.blurb.split('. ')[0] + '.';
+  const firstSentence = getFirstSentence(city.blurb);
   ctx.font = 'italic 24px Georgia, "Times New Roman", serif';
   ctx.fillStyle = customImage ? 'rgba(255,255,255,0.85)' : 'rgba(232, 224, 216, 0.8)';
   wrapText(ctx, `"${firstSentence}"`, 60, 310, CARD_WIDTH - 120, 34);
